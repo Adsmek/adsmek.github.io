@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Adsmek - Мэтт Макай</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="../theme/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="../theme/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="../theme/vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="../theme/css/stylish-portfolio.min.css" rel="stylesheet">
+</head>
+<!-- <body id="page-top">-->
+<body id="page-top" class="home">
+
+  <!-- Navigation -->
+  <a class="menu-toggle rounded" href="#">
+    <i class="fas fa-bars"></i>
+  </a>
+  <nav id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+              <li class="sidebar-brand">
+                <a class="js-scroll-trigger" href="#page-top">Adsmek</a>
+              </li>
+              <li  class="sidebar-nav-item"><a class="js-scroll-trigger"  href="../pages/kozarada.html">Kozarada</a></li>
+              <li  class="sidebar-nav-item"><a class="js-scroll-trigger"  href="../category/adsmek.html">Adsmek</a></li>
+              <li  class="sidebar-nav-item"><a class="js-scroll-trigger"  href="../category/english.html">english</a></li>
+              <li  class="sidebar-nav-item"><a class="js-scroll-trigger"  href="../category/posts.html">posts</a></li>
+              <li  class="sidebar-nav-item"><a class="js-scroll-trigger"  href="../category/translations.html">translations</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header class="masthead d-flex">
+    <div class="container text-center my-auto">
+      <h1><a href="../">Adsmek </a></h1>
+      <h3 class="mb-5">
+      </h3>
+      <!-- <a class="btn btn-primary btn-xl js-scroll-trigger" href="#extras">Find Out More</a> -->
+    </div>
+    <div class="overlay"></div>
+  </header>
+  
+
+            <section class="content-section body bg-light" id="featured">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-10 mx-auto">
+                    <article>
+                        <h1 class="entry-title"><a href="../kak-sozdat-svoi-pervyi-staticheskii-sait-s-pomoshchiu-pelican-i-jinja2.html">Как создать свой первый статический сайт с помощью Pelican и Jinja2</a></h1>
+
+<footer class="post-info">
+        <abbr class="published" title="2017-05-06T00:00:00+02:00">
+                Published: Сб 06 Май 2017
+        </abbr>
+		<br />
+        <abbr class="modified" title="2020-08-07T00:00:00+02:00">
+                Updated: Пт 07 Август 2020
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="../author/mett-makai.html">Мэтт Макай</a>
+        </address>
+<p>In <a href="../category/translations.html">translations</a>.</p>
+<p>tags: <a href="../tag/perevod.html">перевод</a> </p>
+</footer><!-- /.post-info --><h1><a href="https://adsmek.github.io/how-to-create-your-first-static-site-with-pelican-and-jinja2.html" title="Постоянная ссылка на Как создать свой первый статический сайт с помощью Pelican и Jinja2 (en)">Как создать свой первый статический сайт с помощью Pelican и Jinja2</a></h1>
+<p>Автор: Мэтт Макай, 9 июня 2017 г. Pelican - это невероятно хорошо продуманный инструмент Python для создания статических сайтов.</p>
+<p>Полный стек Python создается с помощью шаблонов Pelican, Jinja2 и Markdown. Этот сайт развернут на Amazon S3 и в настоящее время обслуживает более ста тысяч читателей в месяц. Проблемы масштабирования никогда не возникают, потому что статический сайт предварительно создается перед развертыванием, а веб-сервер просто отвечает существующими файлами, а не выполняет какой-либо код на сервере во время цикла HTTP-запроса-ответа.</p>
+<p>Из этого туториала Вы узнаете, как создать собственный статический веб-сайт с нуля с помощью Pelican.</p>
+<p>Страница статей после добавления Bootstrap CSS.</p>
+<p>На нашем простом статическом сайте будут страницы, похожие на приведенный выше снимок экрана, но весь сайт можно легко настроить и расширить с помощью вашего собственного дизайна и контента.</p>
+<p>Наши инструменты Это руководство должно работать с Python 2 или 3, но Python 3 настоятельно рекомендуется для всех новых приложений. Я использовал Python 3.6.1, чтобы написать этот пост. В дополнение к Python в этом руководстве мы также будем использовать следующие зависимости приложений:</p>
+<p>Генератор статических сайтов Pelican, библиотека анализа Markdown версии 3.7.1 для обработки Markdown в качестве формата ввода контента, версия 2.6.8 Jinja2, механизм шаблонов Python, версия 2.9.6 pip и virtualenv, которые поставляются в комплекте с Python 3, для установки и изолировать библиотеки Pelican, Markdown и Jinja2 от любых других ваших проектов Python. Если вам нужна помощь в настройке среды разработки, ознакомьтесь с этим руководством по настройке Python 3 и Flask в Ubuntu 16.04 LTS.</p>
+<p>Весь код в этом сообщении в блоге доступен с открытым исходным кодом под лицензией MIT на GitHub в каталоге generate-static-sites-pelican-jinja2-markdown репозитория blog-code-examples. Используйте и злоупотребляйте исходным кодом для своих собственных приложений.</p>
+<p>Установите библиотеки Pelican и Markdown. Начните с создания новой виртуальной среды для вашего проекта. Мой virtualenv называется staticsite, но вы можете назвать свое имя, которое соответствует создаваемому вами проекту.</p>
+<p>python3 -m venv staticsite Активировать файл virtualenv.</p>
+<p>source staticsite / bin / activate. virtualenv добавит свое имя к командной строке при активации.</p>
+<p>Создайте и активируйте виртуальную среду Python.</p>
+<p>После активации virtualenv установите соответствующие зависимости. Используйте команду pip для установки Pelican и Markdown, которые также установят Jinja2, потому что Pelican указывает его как зависимость.</p>
+<p>pip install pelican == 3.7.1 markdown == 2.6.8 Запустите команду pip, и после того, как все будет установлено, вы должны увидеть вывод, аналогичный следующему сообщению «Успешно установлено».</p>
+<p>Установка собранных пакетов: pygments, pytz, six, feedgenerator, blinker, unidecode, MarkupSafe, jinja2, python-dateutil, Docutils, pelican, markdown Запуск setup.py install для feedgenerator ... готово Запуск setup.py install для blinker ... done Запуск setup.py install для MarkupSafe ... done Запуск setup.py install для markdown ... done Успешно установлен MarkupSafe-1.0 blinker-1.4 Docutils-0.13.1 feedgenerator-1.9 jinja2-2.9.6 markdown-2.6.8 pelican -3.7.1 pygments-2.2.0 python-dateutil-2.6.0 pytz-2017.2 six-1.10.0 unidecode-0.4.20 Теперь, когда наши зависимости установлены в virtualenv, мы можем приступить к созданию нашего статического сайта.</p>
+<p>Создание базового сайта Создайте новый каталог для хранения вашего проекта. Мой сайт будет содержать в качестве примеров некоторых из моих любимых исполнителей ретро-синтвейва, но, конечно, ваш сайт может содержать любые темы, которые вы хотите.</p>
+<p>После создания перейдите в каталог проекта.</p>
+<p>mkdir retrosynth cd retrosynth Запустить команду pelican-quickstart в новом каталоге проекта.</p>
+<p>(staticsite) $ pelican-quickstart Скрипт быстрого запуска ответит на кучу вопросов. Следуйте приведенным ниже ответам или измените их для своего собственного имени сайта и желаемой конфигурации.</p>
+<p>Добро пожаловать в pelican-quickstart v3.7.1. Этот скрипт поможет вам создать новый веб-сайт на основе Пеликана. Пожалуйста, ответьте на следующие вопросы, чтобы этот сценарий мог сгенерировать файлы, необходимые Pelican.</p>
+<blockquote>
+<p>Где вы хотите создать свой новый веб-сайт? [.] Как будет называться этот веб-сайт? RetroSynthwave Кто будет автором этого веб-сайта? Мэтт Макай Какой язык будет по умолчанию на этом веб-сайте? [ru] Вы хотите указать префикс URL? например, http://example.com (Y / n) n Вы хотите включить нумерацию статей? (Д / нет) n Какой у вас часовой пояс? [Европа / Париж] Америка / Нью-Йорк Хотите создать Fabfile / Makefile для автоматизации создания и публикации? (Д / нет) Да Вы хотите автоматическую перезагрузку и Сценарий simpleHTTP для помощи в разработке тем и сайтов? (Д / нет) Да Вы хотите загрузить свой сайт через FTP? (да / Нет) n Вы хотите загрузить свой веб-сайт с помощью SSH? (да / Нет) n Вы хотите загрузить свой веб-сайт с помощью Dropbox? (да / нет) n Вы хотите загрузить свой веб-сайт с помощью S3? (Да / Нет) Да Как называется ваша корзина S3? [my_s3_bucket] Хотите загрузить свой сайт с помощью Rackspace Cloud Files? (да / Нет) n Вы хотите загрузить свой сайт с помощью GitHub Pages? (да / нет) нет Готово. Ваш новый проект доступен по адресу / Users / matt / devel / py / retrosynth (staticsite) $ Что мы только что создали с помощью сценария быстрого запуска Pelican? Проверьте новые файлы в каталоге. Ваш новый проект доступен по адресу / Users / matt / devel / py / retrosynth (staticsite) $ Что мы только что создали с помощью сценария быстрого запуска Pelican? Проверьте новые файлы в каталоге. Ваш новый проект доступен по адресу / Users / matt / devel / py / retrosynth (staticsite) $ Что мы только что создали с помощью сценария быстрого запуска Pelican? Проверьте новые файлы в каталоге.</p>
+</blockquote>
+<p>(staticsite) $ ls Makefile develop_server.sh pelicanconf.py content fabfile.py publishconf.py При быстром запуске были созданы пять файлов и один новый каталог:</p>
+<p>Makefile: выполнение командных задач для общих операций, таких как запуск сервера разработки, создание сайта и очистка посторонних файлов сборки fabfile.py: файл Fabric, который содержит некоторые из тех же типов команд, что и Makefile. Fabric - прекрасная библиотека кода, но пока я рекомендую пропустить файл Fabric, потому что, к сожалению, Fabric еще не поддерживает Python 3. develop_server.sh: сценарий оболочки для запуска сервера разработки pelicanconf.py: файл настроек для вашего проекта Pelican. Если вы привыкли к более ранним версиям Pelican, то вместо этого этот файл назывался settings.py publishconf.py: другой (необязательный) файл настроек, который можно рассматривать как «рабочий» файл настроек, когда вы переходите из этапа разработки и хотите развернуть свой контент сайта: расположение ваших файлов разметки, которые должны храниться в каталогах страниц и сообщений. Мы можем использовать эти файлы в качестве основы для нашего нового статического сайта. Давайте посмотрим, как это выглядит по умолчанию, запустив его через задачу devserver в Makefile.</p>
+<p>make devserver Сервер разработки Pelican начнет обслуживать ваш сайт с помощью процесса-демона. Перейдите на localhost: 8000 в своем браузере, и вы увидите первую версию своего статического сайта.</p>
+<p>Стиль по умолчанию на статическом сайте Pelican.</p>
+<p>Что делать, если в вашей системе не установлена ​​программа make? Перейдите в выходной каталог и используйте команду python -m http.server, чтобы использовать встроенный HTTP-сервер Python 3 для ваших сгенерированных файлов.</p>
+<p>Если вы хотите убить сервер разработки, найдите файл с именем pelican.pid в каталоге вашего проекта. Файл pelican.pid создается Pelican и содержит идентификатор процесса для вашего сервера разработки.</p>
+<p>(staticsite) $ cat pelican.pid 1365 Используйте команды ps и grep для просмотра процесса, а затем остановите его с помощью команды kill, как показано ниже. Помните, что ваш идентификатор процесса почти наверняка будет отличаться от идентификатора 1365 для моего процесса.</p>
+<p>Завершите работу сервера разработки сейчас, чтобы мы могли использовать различные команды для обслуживания нашего сайта после создания нашего исходного контента.</p>
+<p>(статический сайт) $ ps -A | grep 1365 1365 ttys003 0: 01.43 /Library/Frameworks/Python.framework/Versions/3.6/Resources/Python.app/Contents/MacOS/Python / Users / matt / Envs / staticsite / bin / pelican --debug --autoreload - r / Users / matt / devel / py / retrosynth / content -o / Users / matt / devel / py / retrosynth / output -s /Users/matt/devel/py/retrosynth/pelicanconf.py 1411 ttys003 0: 00.00 grep 1365 (статический сайт) $ kill 1365 (статический сайт) $ ps -A | grep 1365 1413 ttys003 0: 00.00 grep 1365 От вас зависит, хотите ли вы использовать сервер разработки при создании своего сайта. Каждый раз, когда я хочу просмотреть свои изменения для Full Stack Python, я регенерирую сайт, используя свой собственный Makefile, который является оболочкой для команды pelican. Команда python -m http.server постоянно обслуживает изменения каждой сборки.</p>
+<p>Хорошо, теперь, когда у нас есть стартовые файлы, мы можем приступить к работе над созданием начального контента.</p>
+<p>Напишите некоторый контент Pelican может принимать в качестве входных данных файлы разметки Markdown и reStructureText.</p>
+<p>Создайте новый подкаталог под содержимым с именем posts. Перейдите в каталог сообщений. Создайте новый файл с именем gunship.markdown со следующим содержимым.</p>
+<p>название: Gunship Slug: <a href="https://www.gunshipmusic.com/">Gunship</a> категория: группы дата: 2017-06-09 изменено: 2017-06-09 <a href="https://www.gunshipmusic.com/">Gunship</a> - <em>ретро-синтвейв-</em> исполнитель из Великобритании. <a href="https://www.youtube.com/watch?v=uYRZV8dV10w">Revel in Your Time</a> , <a href="https://www.youtube.com/watch?v=-nC5TBv3sfU">Tech Noir</a> , <a href="https://www.youtube.com/watch?v=Jv1ZN8c4_Gs">Fly for Your Life</a> и <a href="https://www.youtube.com/watch?v=-HYRTJr8EyA">The Mountain</a> - все это качественные песни Gunship. Посмотрите эти потрясающие музыкальные клипы! Также обратите внимание на других ретро-synthwave-исполнителей, таких как <a href="https://trevorsomething.bandcamp.com/">Trevor Something</a> , <a href="https://droidbishop.bandcamp.com/">Droid Bishop</a> , <a href="https://fm84.bandcamp.com/">FM-84</a> и <a href="https://danieldeluxe.bandcamp.com/">Daniel Deluxe</a> . Наш make-файл также может помочь нам восстановить сайт при внесении изменений, если мы решим не использовать сервер разработки.</p>
+<p>Ранее мы использовали задачу devserver, но какие еще задачи доступны нам через Makefile?</p>
+<p>make make должен показать нам все следующие задачи, которые мы можем выполнить.</p>
+<p>Makefile для веб-сайта пеликана Использование: make html (re) сгенерировать веб-сайт make clean удалить сгенерированные файлы заставить регенерировать регенерировать файлы после модификации make опубликовать сгенерировать с использованием производственных настроек make serve [PORT = 8000] serve site at http: // localhost : 8000 make serve-global [SERVER = 0.0.0.0] serve (как root) для: 80 make devserver [PORT = 8000] start / restart develop_server.sh сделать stopserver остановить локальный сервер заставить ssh_upload загрузить веб-сайт через SSH сделать rsync_upload загрузить веб-сайт через rsync + ssh сделать dropbox_upload загрузить веб-сайт через Dropbox сделать ftp_upload загрузить веб-сайт через FTP заставить s3_upload загрузить веб-сайт через S3 сделать cf_upload загрузить веб-сайт через Cloud Files заставить github загрузить веб-сайт через gh-страницы Установите для переменной DEBUG значение 1, чтобы включить отладку, напримерmake DEBUG = 1 html Установите для переменной RELATIVE значение 1, чтобы включить относительные URL-адреса. Задача html - это то, что мы ищем для вызова команды pelican с использованием нашего файла настроек pelicanconf.py.</p>
+<p>(staticsite) $ make html pelican / Users / matt / devel / py / retrosynth / content -o / Users / matt / devel / py / retrosynth / output -s /Users/matt/devel/py/retrosynth/pelicanconf.py Готово : Обработано 1 статья, 0 черновиков, 0 страниц и 0 скрытых страниц за 0,14 секунды. Наш сайт был регенерирован и помещен в выходной каталог.</p>
+<p>Если вы использовали команду make devserver ранее, перейдите в выходной каталог и дайте возможность встроенному HTTP-серверу Python с помощью следующей команды.</p>
+<p>cd output python -m http.server Наш первый пост во всей красе ...</p>
+<p>Gunship в качестве первого поста нашей группы на статическом ретро-сайте synthwave.</p>
+<p>Вы можете изменить привязку порта HTTP-сервера, добавив номер после команды, если вы хотите обслуживать более одного статического сайта одновременно или у вас уже есть приложение, привязанное к порту 8000.</p>
+<p>python -m http.server 8005 Обратите внимание: если вы используете Python 2, эквивалентная команда HTTP-сервера - python -m SimpleHTTPServer.</p>
+<p>На нашем сайте теперь есть очень простой контент. Мы могли бы расширить это начало на гораздо больше сообщений и страниц, но давайте узнаем, как изменить конфигурацию сайта.</p>
+<p>Редактировать конфигурацию сайта Краткое руководство Pelican предполагает ряд настроек по умолчанию, которые могут или не могут быть применимы к вашему сайту. Откройте файл pelicanconf.py, чтобы изменить некоторые значения по умолчанию.</p>
+<p>Найдите переменную TIMEZONE. Если это не подходит для вашего местоположения, измените его на свою зону. В Википедии есть удобная таблица допустимых значений часовых поясов.</p>
+<p>Также измените кортеж LINKS, включив в него ваш сайт (или полный стек Python!) Вместо ссылки «вы можете изменить эти ссылки». Измените последнюю строку LINKS так, чтобы она выглядела как следующий кортеж кортежей.</p>
+<h1>Blogroll</h1>
+<div class="highlight"><pre><span></span><code><span class="err">LINKS = ((&#39;Пеликан&#39;, &#39;http://getpelican.com/&#39;), (&#39;Python.org&#39;, &#39;http://python.org/&#39;), (&#39;Jinja2&#39;, &#39;http: // jinja .pocoo.org / &#39;), (&#39; Full Stack Python &#39;,&#39; https://www.fullstackpython.com/ &#39;),)</span>
+</code></pre></div>
+
+
+<p>Вместо использования файла make html на этот раз мы вызовем команду pelican непосредственно из команды линия. В Makefile нет ничего плохого, но неплохо освоить Pelican напрямую, а не только через файлы сборки.</p>
+<div class="highlight"><pre><span></span><code><span class="err">pelican -s pelicanconf.py -o output content</span>
+</code></pre></div>
+
+
+<p>Теперь запустите HTTP-сервер, если он еще не запущен в другом окне терминала.</p>
+<p>cd output python -m http.server Вернитесь в браузер и обновите страницу, чтобы просмотреть обновленную конфигурацию.</p>
+<p>Новые ссылки, созданные файлом настроек конфигурации pelicanconf.py.</p>
+<p>Что происходит, когда мы нажимаем на заголовок сообщения в блоге? Он переносит нас на очень похожую страницу с URL-адресом localhost: 8000 / gunship.html.</p>
+<p>Дополнительная страница Gunship для сайта.</p>
+<p>Хорошо, мы обновили некоторые основные данные по всему сайту, но нашему сайту действительно нужно изменить окраску.</p>
+<p>Изменение темы сайта Изменение темы сайта - это действительно то место, где вы можете превратить стандартный блог в сайт любого типа, который вы хотите создать. Хотя стандартная конфигурация Pelican создает шаблон блога, вам не нужно иметь хронологическую структуру, если она не подходит для вашего сайта.</p>
+<p>Создайте новый каталог в каталоге вашего проекта с именем theme. В теме создайте еще один каталог с именем templates. Шаблоны - это место, где будут храниться наши шаблоны Jinja2, которые могут заменять тему по умолчанию.</p>
+<p>Начните с создания файла с именем base.html, в котором будет храниться шаблон, используемый шаблонами на сайте.</p>
+<div class="highlight"><pre><span></span><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;en&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span><span class="cp">{%</span> <span class="k">block</span> <span class="nv">title</span> <span class="cp">%}{%</span> <span class="k">endblock</span> <span class="cp">%}</span><span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;container&quot;</span><span class="p">&gt;</span>
+ <span class="cp">{%</span> <span class="k">block</span> <span class="nv">content</span> <span class="cp">%}{%</span> <span class="k">endblock</span> <span class="cp">%}</span>
+ <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div>
+
+
+<p>В теме / шаблонах создайте файл с именем article.html, который будет иметь тему для сообщений блога, отличную от остальной части сайта. Заполните article.html следующей разметкой Jinja2.</p>
+<div class="highlight"><pre><span></span><code><span class="cp">{%</span> <span class="k">extends</span> <span class="s2">&quot;base.html&quot;</span> <span class="cp">%}</span>
+<span class="cp">{%</span> <span class="k">block</span> <span class="nv">title</span> <span class="cp">%}{{</span> <span class="nv">article.title</span> <span class="cp">}}{%</span> <span class="k">endblock</span> <span class="cp">%}</span>
+<span class="cp">{%</span> <span class="k">block</span> <span class="nv">content</span> <span class="cp">%}</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;row&quot;</span><span class="nt">&gt;</span>
+ <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;col-md-8&quot;</span><span class="nt">&gt;</span>
+ <span class="nt">&lt;h1&gt;</span><span class="cp">{{</span> <span class="nv">article.title</span> <span class="cp">}}</span><span class="nt">&lt;/h1&gt;</span>
+ <span class="nt">&lt;label&gt;</span>Posted on <span class="nt">&lt;strong&gt;</span><span class="cp">{{</span> <span class="nv">article.date</span> <span class="cp">}}</span><span class="nt">&lt;/strong&gt;&lt;/label&gt;</span>
+ <span class="cp">{{</span> <span class="nv">article.content</span> <span class="cp">}}</span>
+ <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="cp">{%</span> <span class="k">endblock</span> <span class="cp">%}</span>
+</code></pre></div>
+
+
+<p>Затем мы воспользуемся шаблоном Jinja2, чтобы переопределить главную страницу index.html по умолчанию. Снова в каталоге theme / templates создайте файл с именем index.html со следующей разметкой.</p>
+<div class="highlight"><pre><span></span><code><span class="cp">{%</span> <span class="k">extends</span> <span class="s2">&quot;base.html&quot;</span> <span class="cp">%}</span>
+<span class="cp">{%</span> <span class="k">block</span> <span class="nv">title</span> <span class="cp">%}{{</span> <span class="nv">SITENAME</span> <span class="cp">}}{%</span> <span class="k">endblock</span> <span class="cp">%}</span>
+<span class="cp">{%</span> <span class="k">block</span> <span class="nv">content</span> <span class="cp">%}</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;row&quot;</span><span class="nt">&gt;</span>
+ <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;col-md-8&quot;</span><span class="nt">&gt;</span>
+ <span class="nt">&lt;h1&gt;</span><span class="cp">{{</span> <span class="nv">SITENAME</span> <span class="cp">}}</span><span class="nt">&lt;/h1&gt;</span>
+ <span class="cp">{%</span> <span class="k">for</span> <span class="nv">article</span> <span class="k">in</span> <span class="nv">articles</span> <span class="cp">%}</span>
+ <span class="nt">&lt;h2&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;/</span><span class="cp">{{</span> <span class="nv">article.slug</span> <span class="cp">}}</span><span class="s">.html&quot;</span><span class="nt">&gt;</span><span class="cp">{{</span> <span class="nv">article.title</span> <span class="cp">}}</span><span class="nt">&lt;/a&gt;&lt;/h2&gt;</span>
+ <span class="nt">&lt;label&gt;</span>Posted on <span class="nt">&lt;strong&gt;</span><span class="cp">{{</span> <span class="nv">article.date</span> <span class="cp">}}</span><span class="nt">&lt;/strong&gt;&lt;/label&gt;</span>
+ <span class="cp">{{</span> <span class="nv">article.content</span><span class="o">|</span><span class="nf">truncate</span><span class="o">(</span><span class="m">110</span><span class="o">)</span> <span class="cp">}}</span>
+ <span class="cp">{%</span> <span class="k">else</span> <span class="cp">%}</span>
+ No posts yet!
+ <span class="cp">{%</span> <span class="k">endfor</span> <span class="cp">%}</span>
+ <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="cp">{%</span> <span class="k">endblock</span> <span class="cp">%}</span>
+</code></pre></div>
+
+
+<p>Восстановите сайт и убедитесь, что вы обслуживаете его с помощью сервера разработки или команды python -m http.server.</p>
+<p>Обязательно используйте новый флаг темы -t, чтобы указать, что шаблоны Jinja2 в каталоге тем должны применяться к сайту.</p>
+<p>pelican -s pelicanconf.py -o output -t theme content Перейдите на localhost: 8000 и обновите страницу. Стиль на главной странице теперь другой, потому что он использует тему index.html.</p>
+<p>Страница index.html без применения стилей.</p>
+<p>Щелкните заголовок сообщения о боевом корабле. На этой странице используется шаблон article.html, хотя трудно сказать, потому что к странице не применен CSS.</p>
+<p>Статьи имеют совершенно другую тему, основанную на разметке article.html.</p>
+<p>Довольно редко! Мы можем по крайней мере добавить CSS Bootstrap в HTML, чтобы выровнять наш контент.</p>
+<p>Внутри <code>base.html</code>добавьте следующую строку для Bootstrap ниже <code>&lt;title&gt;{% block title %}{% endblock %}&lt;/title&gt;</code>и выше <code>&lt;/head&gt;</code>.</p>
+<div class="highlight"><pre><span></span><code><span class="err">&lt;!-- Latest compiled and minified Bootstrap CSS --&gt;</span>
+<span class="err">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css&quot; integrity=&quot;sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u&quot; crossorigin=&quot;anonymous&quot;&gt;</span>
+</code></pre></div>
+
+
+<p>Восстановите сайт и обновите страницу Gunship.</p>
+<p>Страница статей после добавления Bootstrap CSS.</p>
+<p>По крайней мере, наш дизайн переместился с 1996 на 2001. Я уверен, что вы можете сделать гораздо больше, чтобы улучшить дизайн своего сайта.</p>
+<p>Новый base.html пока не предоставляет много темы, но, по крайней мере, обеспечивает новый старт для полностью настраиваемых сайтов.</p>
+<p>Что дальше? Вы создали свой первый статический веб-сайт Pelican, используя Markdown и Jinja2. В шаблоны Jinja2 и содержимое файлов Markdown можно внести дополнительные изменения.</p>
+<p>Вы хотите развернуть свой новый статический веб-сайт на страницах GitHub или в сегменте S3? Что ж, это история для другого учебника Full Stack Python ...</p>
+<p>Вопросы? Дайте мне знать через тикет о выпуске GitHub в репозитории Full Stack Python, в Twitter @fullstackpython или @mattmakai.</p>
+<p>Видите что-то не так в этом сообщении в блоге? Разверните исходный код этой страницы на GitHub и отправьте запрос на перенос.</p>                    </article>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- /#featured -->
+  <!-- extras -->
+  <section class="content-section bg-light" id="extras">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <div class="blogroll">
+                  <h2>links</h2>
+                  <ul>
+                      <li><a href="https://adsmek.github.io">Adsmek</a></li>
+                      <li><a href="https://github.com/Adsmek/Adsmek.github.io">перейти в репозиторий</a></li>
+                      <li><a href="https://stackedit.io/app#">Markdown онлайн</a></li>
+                  </ul>
+          </div><!-- /.blogroll -->
+<!-- /#extras -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <div class="container">
+      <ul class="list-inline mb-5">
+            <li class="list-inline-item"><a class="social-link rounded-circle text-white mr-3" href="#" href=""><i class="icon-social-github"></i></a></li>
+      </ul>
+      <p class="text-muted small mb-0">Copyright &copy; Adsmek 2020</p>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="../theme/vendor/jquery/jquery.min.js"></script>
+  <script src="../theme/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="../theme/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="../theme/js/stylish-portfolio.min.js"></script>
+
+
+</body>
+
+</html>

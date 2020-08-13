@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Написание контента</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="./theme/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="./theme/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="./theme/vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="./theme/css/stylish-portfolio.min.css" rel="stylesheet">
+</head>
+<!-- <body id="page-top">-->
+<body id="page-top" class="home">
+
+  <!-- Navigation -->
+  <a class="menu-toggle rounded" href="#">
+    <i class="fas fa-bars"></i>
+  </a>
+  <nav id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+              <li class="sidebar-brand">
+                <a class="js-scroll-trigger" href="#page-top">Adsmek</a>
+              </li>
+              <li  class="sidebar-nav-item"><a class="js-scroll-trigger"  href="./pages/kozarada.html">Kozarada</a></li>
+              <li  class="sidebar-nav-item"><a class="js-scroll-trigger"  href="./category/adsmek.html">Adsmek</a></li>
+              <li  class="sidebar-nav-item"><a class="js-scroll-trigger"  href="./category/english.html">english</a></li>
+              <li  class="sidebar-nav-item"><a class="js-scroll-trigger"  href="./category/posts.html">posts</a></li>
+              <li class="active"  class="sidebar-nav-item"><a class="js-scroll-trigger"  href="./category/translations.html">translations</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header class="masthead d-flex">
+    <div class="container text-center my-auto">
+      <h1><a href="./">Adsmek </a></h1>
+      <h3 class="mb-5">
+      </h3>
+      <!-- <a class="btn btn-primary btn-xl js-scroll-trigger" href="#extras">Find Out More</a> -->
+    </div>
+    <div class="overlay"></div>
+  </header>
+  
+<section class="content-section bg-light" id="content" class="body">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        <header>
+          <h1 class="entry-title">
+            <a href="./napisanie-kontenta.html" rel="bookmark"
+               title="Permalink to Написание контента">Написание контента</a></h1>
+        </header>
+
+        <div class="entry-content">
+
+<footer class="post-info">
+        <abbr class="published" title="2020-08-10T13:30:43.872576+02:00">
+                Published: Пн 10 Август 2020
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="./author/docsgetpelicancom.html">docs.getpelican.com</a>
+        </address>
+<p>In <a href="./category/translations.html">translations</a>.</p>
+
+</footer><!-- /.post-info -->          <h2>Написание контента<a href="https://docs.getpelican.com/en/stable/content.html#writing-content" title="Постоянная ссылка на этот заголовок">¶</a></h2>
+<h2>Статьи и страницы<a href="https://docs.getpelican.com/en/stable/content.html#articles-and-pages" title="Постоянная ссылка на этот заголовок">¶</a></h2>
+<p>Пеликан считает «статьи» хронологическим содержанием, например сообщениями в блоге, и, следовательно, связанными с датой.</p>
+<p>Идея «страниц» заключается в том, что они обычно не носят временный характер и используются для содержания, которое не меняется очень часто (например, страницы «О нас» или «Контакты»).</p>
+<p>Вы можете найти образцы контента в репозитории по адресу <code>samples/content/</code>.</p>
+<h2>Метаданные файла<a href="https://docs.getpelican.com/en/stable/content.html#file-metadata" title="Постоянная ссылка на этот заголовок">¶</a></h2>
+<p>Пеликан старается быть достаточно умным, чтобы получить необходимую информацию из файловой системы (например, о категории ваших статей), но некоторую информацию вам необходимо предоставить в виде метаданных внутри ваших файлов.</p>
+<p>Если вы пишете свой контент в формате reStructuredText, вы можете предоставить эти метаданные в текстовых файлах с помощью следующего синтаксиса (дайте вашему файлу <code>.rst</code> расширение):</p>
+<div class="highlight"><pre><span></span><code><span class="n">My</span> <span class="n">super</span> <span class="n">title</span>
+<span class="o">##############</span>
+
+<span class="p">:</span><span class="nb">date</span><span class="p">:</span> <span class="mi">2010</span><span class="o">-</span><span class="mi">10</span><span class="o">-</span><span class="mi">03</span> <span class="mi">10</span><span class="p">:</span><span class="mi">20</span>
+<span class="p">:</span><span class="n">modified</span><span class="p">:</span> <span class="mi">2010</span><span class="o">-</span><span class="mi">10</span><span class="o">-</span><span class="mi">04</span> <span class="mi">18</span><span class="p">:</span><span class="mi">40</span>
+<span class="p">:</span><span class="n">tags</span><span class="p">:</span> <span class="n">thats</span><span class="p">,</span> <span class="n">awesome</span>
+<span class="p">:</span><span class="n">category</span><span class="p">:</span> <span class="n">yeah</span>
+<span class="p">:</span><span class="n">slug</span><span class="p">:</span> <span class="n">my</span><span class="o">-</span><span class="n">super</span><span class="o">-</span><span class="n">post</span>
+<span class="p">:</span><span class="n">authors</span><span class="p">:</span> <span class="n">Alexis</span> <span class="n">Metaireau</span><span class="p">,</span> <span class="n">Conan</span> <span class="n">Doyle</span>
+<span class="p">:</span><span class="n">summary</span><span class="p">:</span> <span class="n">Short</span> <span class="k">version</span> <span class="k">for</span> <span class="k">index</span> <span class="k">and</span> <span class="n">feeds</span>
+
+
+
+<span class="err">Мой</span>  <span class="err">супер</span>  <span class="err">заголовок</span> 
+<span class="o">##############</span>
+
+<span class="p">:</span><span class="err">дата</span><span class="p">:</span> <span class="mi">2010</span><span class="o">-</span><span class="mi">10</span><span class="o">-</span><span class="mi">03</span> <span class="mi">10</span><span class="p">:</span><span class="mi">20</span>
+<span class="p">:</span><span class="err">изменено</span><span class="p">:</span> <span class="mi">2010</span><span class="o">-</span><span class="mi">10</span><span class="o">-</span><span class="mi">04</span> <span class="mi">18</span><span class="p">:</span><span class="mi">40</span>
+<span class="p">:</span><span class="err">теги</span><span class="p">:</span>  <span class="err">вот</span> <span class="p">,</span>  <span class="err">круто</span> 
+<span class="p">:</span><span class="err">категория</span><span class="p">:</span>  <span class="err">да</span> 
+<span class="p">:</span><span class="n">slug</span><span class="p">:</span>  <span class="err">моё</span><span class="o">-</span><span class="err">супер</span><span class="o">-</span><span class="err">сообщение</span> 
+<span class="p">:</span><span class="err">авторы</span><span class="p">:</span> <span class="err">Алексис</span> <span class="err">Метеро</span><span class="p">,</span> <span class="err">Конан</span> <span class="err">Дойл</span>
+<span class="p">:</span><span class="err">резюме</span><span class="p">:</span> <span class="err">Краткая</span> <span class="err">версия</span>  <span class="err">для</span> <span class="err">индекса</span> <span class="err">и</span> <span class="err">каналов</span>
+</code></pre></div>
+
+
+<p>Вместо этого списки авторов и тегов могут разделяться точкой с запятой, что позволяет писать авторов и теги, содержащие запятые:</p>
+<div class="highlight"><pre><span></span><code><span class="p">:</span><span class="nd">tags</span><span class="o">:</span> <span class="nt">pelican</span><span class="o">,</span> <span class="nt">publishing</span> <span class="nt">tool</span><span class="o">;</span> <span class="nt">pelican</span><span class="o">,</span> <span class="nt">bird</span>
+<span class="p">:</span><span class="nd">authors</span><span class="o">:</span> <span class="nt">Metaireau</span><span class="o">,</span> <span class="nt">Alexis</span><span class="o">;</span> <span class="nt">Doyle</span><span class="o">,</span> <span class="nt">Conan</span>
+
+<span class="p">:</span><span class="nd">tags</span><span class="o">:</span> <span class="nt">пеликан</span><span class="o">,</span> <span class="nt">издательский</span>  <span class="nt">инструмент</span><span class="o">;</span> <span class="nt">пеликан</span><span class="o">,</span> <span class="nt">птица</span> 
+<span class="p">:</span><span class="nd">авторы</span><span class="o">:</span> <span class="nt">Метеро</span><span class="o">,</span> <span class="nt">Алексис</span><span class="o">;</span> <span class="nt">Дойл</span> <span class="o">,</span> <span class="nt">Конан</span>
+</code></pre></div>
+
+
+<p>Пеликан реализует расширение для reStructuredText, чтобы включить поддержку <code>abbr</code> тега HTML. Чтобы использовать его, напишите в своем посте что-то вроде этого:</p>
+<div class="highlight"><pre><span></span><code><span class="err">This will be turned into :abbr:`HTML (HyperText Markup Language)`.</span>
+<span class="err">Это будет преобразовано в :abbr:`HTML (язык разметки гипертекста)`.</span>
+</code></pre></div>
+
+
+<p>Вы также можете использовать Markdown синтаксис (с файлом , заканчивающимся в <code>.md</code>, <code>.markdown</code>, <code>.mkd</code>, или <code>.mdown</code>). Для создания Markdown требуется, чтобы вы сначала явно установили <code>Markdown</code> пакет, что можно сделать через .<code>pip  install  Markdown</code></p>
+<p>Pelican также поддерживает <a href="https://python-markdown.github.io/extensions/">расширения Markdown</a> , которые, возможно, придется установить отдельно, если они не включены в <code>Markdown</code> пакет по умолчанию , и их можно настроить и загрузить с помощью <code>MARKDOWN</code> параметра.</p>
+<p>Синтаксис метаданных для сообщений Markdown должен соответствовать следующему шаблону:</p>
+<div class="highlight"><pre><span></span><code><span class="n">Title</span><span class="o">:</span> <span class="n">My</span> <span class="kd">super</span> <span class="n">title</span>
+<span class="n">Date</span><span class="o">:</span> <span class="mi">2010</span><span class="o">-</span><span class="mi">12</span><span class="o">-</span><span class="mi">03</span> <span class="mi">10</span><span class="o">:</span><span class="mi">20</span>
+<span class="n">Modified</span><span class="o">:</span> <span class="mi">2010</span><span class="o">-</span><span class="mi">12</span><span class="o">-</span><span class="mi">05</span> <span class="mi">19</span><span class="o">:</span><span class="mi">30</span>
+<span class="n">Category</span><span class="o">:</span> <span class="n">Python</span>
+<span class="n">Tags</span><span class="o">:</span> <span class="n">pelican</span><span class="o">,</span> <span class="n">publishing</span>
+<span class="n">Slug</span><span class="o">:</span> <span class="n">my</span><span class="o">-</span><span class="kd">super</span><span class="o">-</span><span class="n">post</span>
+<span class="n">Authors</span><span class="o">:</span> <span class="n">Alexis</span> <span class="n">Metaireau</span><span class="o">,</span> <span class="n">Conan</span> <span class="n">Doyle</span>
+<span class="n">Summary</span><span class="o">:</span> <span class="n">Short</span> <span class="n">version</span> <span class="k">for</span> <span class="n">index</span> <span class="n">and</span> <span class="n">feeds</span>
+
+<span class="n">This</span> <span class="k">is</span> <span class="n">the</span> <span class="n">content</span> <span class="n">of</span> <span class="n">my</span> <span class="kd">super</span> <span class="n">blog</span> <span class="n">post</span><span class="o">.</span>
+
+
+<span class="err">Название</span> <span class="o">:</span> <span class="err">Мой</span> <span class="err">супер</span> <span class="err">заголовок</span>
+<span class="err">Дата</span><span class="o">:</span> <span class="mi">2010</span><span class="o">-</span><span class="mi">12</span><span class="o">-</span><span class="mi">03</span> <span class="mi">10</span><span class="o">:</span><span class="mi">20</span>
+<span class="err">Изменено</span><span class="o">:</span> <span class="mi">2010</span><span class="o">-</span><span class="mi">12</span><span class="o">-</span><span class="mi">05</span> <span class="mi">19</span><span class="o">:</span><span class="mi">30</span>
+<span class="err">Категория</span><span class="o">:</span> <span class="n">Python</span> 
+<span class="err">Теги</span><span class="o">:</span> <span class="err">пеликан</span><span class="o">,</span> <span class="err">публикация</span> 
+<span class="err">Слаг</span><span class="o">:</span> <span class="n">my</span><span class="o">-</span><span class="kd">super</span><span class="o">-</span><span class="n">post</span> 
+<span class="err">Авторы</span><span class="o">:</span> <span class="n">Alexis</span>  <span class="n">Metaireau</span> <span class="o">,</span>  <span class="n">Conan</span>  <span class="n">Doyle</span> 
+<span class="err">Резюме</span><span class="o">:</span> <span class="n">Short</span> <span class="err">версия</span> <span class="err">для</span> <span class="err">индекса</span> <span class="err">и</span> <span class="err">каналов</span>
+
+<span class="err">Здесь</span> <span class="err">содержание</span> <span class="err">статьи</span> <span class="err">в</span> <span class="err">моем</span> <span class="err">супер</span> <span class="err">блоге</span> <span class="o">.</span>
+</code></pre></div>
+
+
+<p>Вы также можете иметь свои собственные ключи метаданных (при условии, что они не конфликтуют с зарезервированными ключевыми словами метаданных) для использования в ваших шаблонах. </p>
+<p>В следующей таблице содержится список зарезервированных ключевых слов метаданных:</p>
+<p>Метаданные</p>
+<table>
+<thead>
+<tr>
+<th>Metadata</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>title</td>
+<td>Title of the article or page</td>
+</tr>
+<tr>
+<td>date</td>
+<td>Publication date (e.g., YYYY-MM-DD HH:SS)</td>
+</tr>
+<tr>
+<td>modified</td>
+<td>Modification date (e.g., YYYY-MM-DD HH:SS)</td>
+</tr>
+<tr>
+<td>tags</td>
+<td>Content tags, separated by commas</td>
+</tr>
+<tr>
+<td>keywords</td>
+<td>Content keywords, separated by commas (HTML content only)</td>
+</tr>
+<tr>
+<td>category</td>
+<td>Content category (one only — not multiple)</td>
+</tr>
+<tr>
+<td>slug</td>
+<td>Identifier used in URLs and translations</td>
+</tr>
+<tr>
+<td>author</td>
+<td>Content author, when there is only one</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Content authors, when there are multiple</td>
+</tr>
+<tr>
+<td>summary</td>
+<td>Brief description of content for index pages</td>
+</tr>
+<tr>
+<td>lang</td>
+<td>Content language ID (en, fr, etc.)</td>
+</tr>
+<tr>
+<td>translation</td>
+<td>Is content is a translation of another (true or false)</td>
+</tr>
+<tr>
+<td>status</td>
+<td>Content status: draft, hidden, or published</td>
+</tr>
+<tr>
+<td>template</td>
+<td>Name of template to use to generate content (without extension)</td>
+</tr>
+<tr>
+<td>save_as</td>
+<td>Save content to this relative file path</td>
+</tr>
+<tr>
+<td>url</td>
+<td>URL to use for this article/page</td>
+</tr>
+</tbody>
+</table>
+<p>Перевод значений</p>
+<table>
+<thead>
+<tr>
+<th>Метаданные</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>title</code></td>
+<td>Заголовок статьи или страницы</td>
+</tr>
+<tr>
+<td><code>date</code></td>
+<td>Дата публикации (например, )<code>YYYY-MM-DD  HH:SS</code></td>
+</tr>
+<tr>
+<td><code>modified</code></td>
+<td>Дата модификации (например, )<code>YYYY-MM-DD  HH:SS</code></td>
+</tr>
+<tr>
+<td><code>tags</code></td>
+<td>Теги содержимого, разделенные запятыми</td>
+</tr>
+<tr>
+<td><code>keywords</code></td>
+<td>Ключевые слова содержимого, разделенные запятыми (только содержимое HTML)</td>
+</tr>
+<tr>
+<td><code>category</code></td>
+<td>Категория контента (только одна, а не несколько)</td>
+</tr>
+<tr>
+<td><code>slug</code></td>
+<td>Идентификатор, используемый в URL-адресах и переводах</td>
+</tr>
+<tr>
+<td><code>author</code></td>
+<td>Автор контента, когда есть только один</td>
+</tr>
+<tr>
+<td><code>authors</code></td>
+<td>Авторы контента, когда есть несколько</td>
+</tr>
+<tr>
+<td><code>summary</code></td>
+<td>Краткое описание контента для индексных страниц</td>
+</tr>
+<tr>
+<td><code>lang</code></td>
+<td>Идентификатор языка контента ( <code>en</code>, <code>fr</code> и т. Д.)</td>
+</tr>
+<tr>
+<td><code>translation</code></td>
+<td>Является ли контент переводом другого ( <code>true</code> или <code>false</code>)</td>
+</tr>
+<tr>
+<td><code>status</code></td>
+<td>Содержание Статус: <code>draft</code>, <code>hidden</code> или <code>published</code></td>
+</tr>
+<tr>
+<td><code>template</code></td>
+<td>Имя шаблона, который будет использоваться для создания контента (без расширения)</td>
+</tr>
+<tr>
+<td><code>save_as</code></td>
+<td>Сохранить содержимое по этому относительному пути к файлу</td>
+</tr>
+<tr>
+<td><code>url</code></td>
+<td>URL-адрес для этой статьи / страницы</td>
+</tr>
+</tbody>
+</table>
+<p>Читатели для дополнительных форматов (например, <a href="http://www.methods.co.nz/asciidoc/">AsciiDoc</a> ) доступны через плагины. Для этого обратитесь к репозиторию <a href="https://github.com/getpelican/pelican-plugins">pelican-plugins</a> .</p>
+<p>Пеликан также может обрабатывать файлы HTML, оканчивающиеся на <code>.html</code> и <code>.htm</code>. Пеликан очень просто интерпретирует HTML, считывая метаданные из <code>meta</code> тегов, заголовок из <code>title</code> тега и тело из <code>body</code> тега:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">&lt;html&gt;</span>
+    <span class="nt">&lt;head&gt;</span>
+        <span class="nt">&lt;title&gt;</span>My super title<span class="nt">&lt;/title&gt;</span>
+        <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;tags&quot;</span> <span class="na">content=</span><span class="s">&quot;thats, awesome&quot;</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;date&quot;</span> <span class="na">content=</span><span class="s">&quot;2012-07-09 22:28&quot;</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;modified&quot;</span> <span class="na">content=</span><span class="s">&quot;2012-07-10 20:14&quot;</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;category&quot;</span> <span class="na">content=</span><span class="s">&quot;yeah&quot;</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;authors&quot;</span> <span class="na">content=</span><span class="s">&quot;Alexis Métaireau, Conan Doyle&quot;</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;summary&quot;</span> <span class="na">content=</span><span class="s">&quot;Short version for index and feeds&quot;</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;/head&gt;</span>
+    <span class="nt">&lt;body&gt;</span>
+        This is the content of my super blog post.
+    <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+
+<span class="nt">&lt;html&gt;</span>
+    <span class="nt">&lt;head&gt;</span>
+        <span class="nt">&lt;title&gt;</span>Мой супер заголовок<span class="nt">&lt;/title&gt;</span>
+        <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;tags&quot;</span> <span class="na">content=</span><span class="s">&quot;thats, awesome&quot;</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;date&quot;</span> <span class="na">content=</span><span class="s">&quot;2012-07-09 22:28&quot;</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;modified&quot;</span> <span class="na">content=</span><span class="s">&quot;2012-07-10 20:14&quot;</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;category&quot;</span> <span class="na">content=</span><span class="s">&quot;О, да&quot;</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;authors&quot;</span> <span class="na">content=</span><span class="s">&quot;Алексис Métaireau, Конан Дойл&quot;</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;summary&quot;</span> <span class="na">content=</span><span class="s">&quot;Краткая версия для индекса и корм&quot;</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;/head&gt;</span>
+    <span class="nt">&lt;body&gt;</span>
+        This is the content of my super blog post.
+    <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div>
+
+
+<p>В HTML есть одно простое исключение из стандартных метаданных: теги могут быть указаны либо через <code>tags</code> метаданные, как это принято в Pelican, либо через <code>keywords</code> метаданные, как это принято в HTML. Их можно использовать как взаимозаменяемые.</p>
+<p>Обратите внимание, что, помимо заголовка, никакие из этих метаданных контента не являются обязательными: если дата не указана и <code>DEFAULT_DATE</code> установлена ​​на <code>'fs'</code>, Pelican будет полагаться на временную метку файла «mtime», а категория может определяться по каталогу, в котором файл находится. Например, файл, расположенный по адресу, <code>python/foobar/myfoobar.rst</code> будет иметь категорию <code>foobar</code>. Если вы хотите организовать файлы другими способами, при которых имя подпапки не подходит для категории, вы можете установить для этого параметра <code>USE_FOLDER_AS_CATEGORY</code> значение <code>False</code>. При синтаксическом анализе дат, указанных в метаданных страницы, Pelican поддерживает предложенное W3C <a href="https://www.w3.org/TR/NOTE-datetime">подмножество ISO 8601</a> .</p>
+<p>Так что заголовок - единственные требуемые метаданные. Если вас это беспокоит, не волнуйтесь. Вместо того, чтобы каждый раз вручную указывать заголовок в метаданных, вы можете использовать имя файла исходного содержимого в качестве заголовка. Например, исходному файлу Markdown с именем <code>Publishing  via  Pelican.md</code> автоматически будет присвоено название Publishing via Pelican («Публикация через Pelican»). Если вы предпочитаете такое поведение, добавьте в файл настроек следующую строку:</p>
+<div class="highlight"><pre><span></span><code><span class="err">FILENAME_METADATA = &#39;(?P&lt;title&gt;.*)&#39;</span>
+</code></pre></div>
+
+
+<blockquote>
+<p>Заметка </p>
+<p>При экспериментировании с разными настройками (особенно с
+метаданными) кеширование может мешать, и изменения могут быть не
+видны. В таких случаях отключите кеширование или используйте
+переключатель командной строки. <code>LOAD_CONTENT_CACHE = False</code> or use
+the <code>--ignore-cache</code> command-line switch.</p>
+</blockquote>
+<p><code>modified</code> должно быть в последний раз, когда вы обновляли статью, и по умолчанию, <code>date</code> если не указано иное. Помимо того, что вы можете отображать <code>modified</code> в шаблонах, записи каналов в средствах чтения каналов будут обновляться автоматически, если вы установите <code>modified</code> текущую дату после того, как вы изменили свою статью.</p>
+<p><code>authors</code> список авторов статей, разделенных запятыми. Если есть только один автор, вы можете использовать <code>author</code> поле.</p>
+<p>Если вы явно не указали сводные метаданные для данного сообщения, этот <code>SUMMARY_MAX_LENGTH</code> параметр можно использовать, чтобы указать, сколько слов из начала статьи используется в качестве резюме.</p>
+<p>Вы также можете извлечь любые метаданные из имени файла с помощью регулярного выражения, которое будет установлено в <code>FILENAME_METADATA</code> настройке. Все сопоставленные именованные группы будут установлены в объекте метаданных. Значение по умолчанию для этого <code>FILENAME_METADATA</code> параметра будет извлекать только дату из имени файла. Например, если вы хотите извлечь и дату, и заголовок, вы можете установить что-то вроде:<code>'(?P&lt;date&gt;\d{4}-\d{2}-\d{2})_(?P&lt;slug&gt;.*)'</code></p>
+<p>Обратите внимание, что метаданные, доступные в ваших файлах, имеют приоритет над метаданными, извлеченными из имени файла.</p>
+<h2>страницы<a href="https://docs.getpelican.com/en/stable/content.html#pages" title="Постоянная ссылка на этот заголовок">¶</a></h2>
+<p>Если вы создаете папку с именем <code>pages</code> внутри папки содержимого, все файлы в ней будут использоваться для создания статических страниц, таких как « <strong>О нас»</strong> или « <strong>Контакты»</strong> . (См. Пример макета файловой системы ниже.)</p>
+<p>Вы можете использовать эту <code>DISPLAY_PAGES_ON_MENU</code> настройку, чтобы контролировать, все ли эти страницы отображаются в основном меню навигации. (По умолчанию <code>True</code>.)</p>
+<p>Если вы хотите исключить ссылки на какие-либо страницы или их перечисление в меню, добавьте атрибут к его метаданным. Это полезно для таких вещей, как создание страниц ошибок, соответствующих сгенерированной теме вашего сайта. <code>status:  hidden</code></p>
+<h2>Статический контент<a href="https://docs.getpelican.com/en/stable/content.html#static-content" title="Постоянная ссылка на этот заголовок">¶</a></h2>
+<p>Статические файлы - это файлы, отличные от статей и страниц, которые копируются в выходную папку как есть, без обработки. Вы можете контролировать, какие статические файлы копируются, с помощью <code>STATIC_PATHS</code> настройки <code>pelicanconf.py</code> файла проекта . Конфигурация по умолчанию Pelican включает <code>images</code> каталог для этого, но другие должны быть добавлены вручную. Кроме того, включены статические файлы, на которые есть явные ссылки (см. Ниже).</p>
+<h3>Смешанный контент в одном каталоге<a href="https://docs.getpelican.com/en/stable/content.html#mixed-content-in-the-same-directory" title="Постоянная ссылка на этот заголовок">¶</a></h3>
+<p>Начиная с Pelican 3.5, статические файлы могут безопасно делиться исходным каталогом с исходными файлами страниц, не раскрывая источники страниц на сгенерированном сайте. Любой такой каталог должен быть добавлен в оба <code>STATIC_PATHS</code> и <code>PAGE_PATHS</code> (или <code>STATIC_PATHS</code> и <code>ARTICLE_PATHS</code>). Пеликан будет идентифицировать и обрабатывать исходные файлы страниц в обычном режиме, а остальные файлы копировать, как если бы они находились в отдельном каталоге, зарезервированном для статических файлов.</p>
+<p>Примечание. Размещение статических файлов и файлов источника контента вместе в одном исходном каталоге не гарантирует, что они окажутся в одном месте на созданном сайте. Самый простой способ сделать это - использовать <code>{attach}</code> синтаксис ссылки (описанный ниже). Кроме того <code>STATIC_SAVE_AS</code>, можно настроить параметры <code>PAGE_SAVE_AS</code>, и <code>ARTICLE_SAVE_AS</code>(и соответствующие <code>*_URL</code> параметры) для размещения файлов разных типов вместе, как это было в более ранних версиях Pelican.</p>
+<h2>Ссылка на внутренний контент<a href="https://docs.getpelican.com/en/stable/content.html#linking-to-internal-content" title="Постоянная ссылка на этот заголовок">¶</a></h2>
+<p>Начиная с Pelican 3.1, теперь можно указывать внутрисайтовые ссылки на файлы в иерархии <em>исходного контента</em> вместо файлов в <em>сгенерированной</em> иерархии. Это упрощает ссылку из текущего сообщения на другой контент, который может находиться рядом с этим сообщением (вместо того, чтобы определять, где будет размещен другой контент после создания сайта).</p>
+<p>Чтобы создать ссылку на внутреннее содержимое (файлы в <code>content</code> каталоге), используйте следующий синтаксис для цели ссылки: <code>{filename}path/to/file</code> Примечание: косые черты,, <code>/</code> являются обязательным разделителем пути в <code>{filename}</code> директиве во всех операционных системах, включая Windows.</p>
+<p>Например, проект Пеликана может иметь такую ​​структуру:</p>
+<div class="highlight"><pre><span></span><code><span class="n">website</span><span class="o">/</span>
+<span class="err">├──</span> <span class="n">content</span>
+<span class="err">│</span>   <span class="err">├──</span> <span class="n">category</span><span class="o">/</span>
+<span class="err">│</span>   <span class="err">│</span>   <span class="err">└──</span> <span class="n">article1</span><span class="p">.</span><span class="n">rst</span>
+<span class="err">│</span>   <span class="err">├──</span> <span class="n">article2</span><span class="p">.</span><span class="n">md</span>
+<span class="err">│</span>   <span class="err">└──</span> <span class="n">pages</span>
+<span class="err">│</span>       <span class="err">└──</span> <span class="n">about</span><span class="p">.</span><span class="n">md</span>
+<span class="err">└──</span> <span class="n">pelican</span><span class="p">.</span><span class="n">conf</span><span class="p">.</span><span class="n">py</span>
+
+<span class="err">интернет</span> <span class="err">сайт</span><span class="o">/</span> 
+<span class="err">├──</span> <span class="err">содержание</span> 
+<span class="err">│</span>    <span class="err">├──</span> <span class="err">категория</span> <span class="o">/</span> 
+<span class="err">│</span>    <span class="err">│</span>      <span class="err">└──</span> <span class="n">article1</span><span class="p">.</span><span class="n">rst</span>
+<span class="err">│</span>    <span class="err">├──</span> <span class="n">article2</span><span class="p">.</span><span class="n">md</span> 
+<span class="err">│</span>    <span class="err">└──</span> <span class="err">страницы</span> 
+<span class="err">│</span>           <span class="err">└──</span> <span class="n">about</span><span class="p">.</span><span class="n">md</span> 
+<span class="err">└──</span> <span class="n">pelican</span><span class="p">.</span><span class="n">conf</span><span class="p">.</span><span class="n">py</span>
+</code></pre></div>
+
+
+<p>В этом примере это <code>article1.rst</code> может выглядеть так:</p>
+<div class="highlight"><pre><span></span><code><span class="n">The</span> <span class="k">first</span> <span class="n">article</span>
+<span class="o">#################</span>
+
+<span class="p">:</span><span class="nb">date</span><span class="p">:</span> <span class="mi">2012</span><span class="o">-</span><span class="mi">12</span><span class="o">-</span><span class="mi">01</span> <span class="mi">10</span><span class="p">:</span><span class="mi">02</span>
+
+<span class="n">See</span> <span class="n">below</span> <span class="n">intra</span><span class="o">-</span><span class="n">site</span> <span class="n">link</span> <span class="n">examples</span> <span class="k">in</span> <span class="n">reStructuredText</span> <span class="n">format</span><span class="p">.</span>
+
+<span class="o">`</span><span class="n">a</span> <span class="n">link</span> <span class="k">relative</span> <span class="k">to</span> <span class="n">the</span> <span class="k">current</span> <span class="n">file</span> <span class="o">&lt;</span><span class="err">{</span><span class="n">filename</span><span class="err">}</span><span class="p">..</span><span class="o">/</span><span class="n">article2</span><span class="p">.</span><span class="n">md</span><span class="o">&gt;`</span>
+<span class="o">`</span><span class="n">a</span> <span class="n">link</span> <span class="k">relative</span> <span class="k">to</span> <span class="n">the</span> <span class="n">content</span> <span class="n">root</span> <span class="o">&lt;</span><span class="err">{</span><span class="n">filename</span><span class="err">}</span><span class="o">/</span><span class="n">article2</span><span class="p">.</span><span class="n">md</span><span class="o">&gt;`</span>
+
+
+
+<span class="err">Первая</span> <span class="err">статья</span> 
+<span class="o">################</span>
+
+<span class="p">:</span> <span class="nb">date</span><span class="p">:</span> <span class="mi">2012</span><span class="o">-</span><span class="mi">12</span><span class="o">-</span><span class="mi">01</span> <span class="mi">10</span><span class="p">:</span><span class="mi">02</span>
+
+<span class="err">См</span><span class="p">.</span> <span class="err">Ниже</span> <span class="err">примеры</span> <span class="err">внутрисайтовых</span> <span class="err">ссылок</span> <span class="err">в</span> <span class="err">формате</span> <span class="n">reStructuredText</span><span class="p">.</span>
+
+<span class="o">`</span><span class="err">ссылка</span> <span class="err">относительно</span> <span class="err">текущего</span> <span class="err">файла</span> <span class="o">&lt;</span><span class="err">{</span><span class="n">filename</span><span class="err">}</span><span class="p">..</span><span class="o">/</span> <span class="n">article2</span><span class="p">.</span><span class="n">md</span><span class="o">&gt;`</span>
+<span class="o">`</span><span class="err">ссылка</span> <span class="err">относительно</span> <span class="err">корня</span> <span class="err">содержимого</span> <span class="o">&lt;</span><span class="err">{</span><span class="n">filename</span><span class="err">}</span><span class="o">/</span><span class="n">article2</span><span class="p">.</span><span class="n">md</span><span class="o">&gt;`</span>
+</code></pre></div>
+
+
+<p>и <code>article2.md</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="n">Title</span><span class="o">:</span> <span class="n">The</span> <span class="n">second</span> <span class="n">article</span>
+<span class="n">Date</span><span class="o">:</span> <span class="mi">2012</span><span class="o">-</span><span class="mi">12</span><span class="o">-</span><span class="mi">01</span> <span class="mi">10</span><span class="o">:</span><span class="mi">02</span>
+
+<span class="n">See</span> <span class="n">below</span> <span class="n">intra</span><span class="o">-</span><span class="n">site</span> <span class="n">link</span> <span class="n">examples</span> <span class="k">in</span> <span class="n">Markdown</span> <span class="n">format</span><span class="o">.</span>
+
+<span class="o">[</span><span class="n">a</span> <span class="n">link</span> <span class="n">relative</span> <span class="n">to</span> <span class="n">the</span> <span class="n">current</span> <span class="n">file</span><span class="o">]({</span><span class="n">filename</span><span class="o">}</span><span class="n">category</span><span class="o">/</span><span class="n">article1</span><span class="o">.</span><span class="na">rst</span><span class="o">)</span>
+<span class="o">[</span><span class="n">a</span> <span class="n">link</span> <span class="n">relative</span> <span class="n">to</span> <span class="n">the</span> <span class="n">content</span> <span class="n">root</span><span class="o">]({</span><span class="n">filename</span><span class="o">}/</span><span class="n">category</span><span class="o">/</span><span class="n">article1</span><span class="o">.</span><span class="na">rst</span><span class="o">)</span>
+
+
+
+<span class="n">Title</span><span class="o">:</span> <span class="err">Вторая</span> <span class="err">статья</span>
+<span class="n">Date</span><span class="o">:</span> <span class="mi">2012</span><span class="o">-</span><span class="mi">12</span><span class="o">-</span><span class="mi">01</span> <span class="mi">10</span><span class="o">:</span><span class="mi">02</span>
+
+<span class="err">См</span><span class="o">.</span> <span class="err">Ниже</span> <span class="err">примеры</span> <span class="err">внутрисайтовых</span> <span class="err">ссылок</span> <span class="err">в</span> <span class="err">формате</span> <span class="n">Markdown</span><span class="o">.</span>
+
+<span class="o">[</span><span class="err">ссылка</span> <span class="err">относительно</span> <span class="err">текущего</span> <span class="err">файла</span><span class="o">]({</span><span class="n">filename</span><span class="o">}</span><span class="n">category</span><span class="o">/</span><span class="n">article1</span><span class="o">.</span><span class="na">rst</span><span class="o">)</span>
+<span class="o">[</span><span class="err">ссылка</span> <span class="err">относительно</span> <span class="err">корня</span> <span class="err">содержимого</span><span class="o">]({</span><span class="n">filename</span><span class="o">}/</span><span class="n">category</span><span class="o">/</span><span class="n">article1</span><span class="o">.</span><span class="na">rst</span><span class="o">)</span>
+</code></pre></div>
+
+
+<h3>Связывание со статическими файлами<a href="https://docs.getpelican.com/en/stable/content.html#linking-to-static-files" title="Постоянная ссылка на этот заголовок">¶</a></h3>
+<p>Вы можете ссылаться на статический контент, используя <code>{static}path/to/file</code>. Файлы, связанные с этим синтаксисом, будут автоматически скопированы в выходной каталог, даже если исходные каталоги, содержащие их, не включены в <code>STATIC_PATHS</code>  настройку <code>pelicanconf.py</code> файла проекта.</p>
+<p>Например, каталог содержимого проекта может иметь такую ​​структуру:</p>
+<div class="highlight"><pre><span></span><code><span class="err">содержание</span> 
+<span class="err">├──</span> <span class="err">изображения</span> 
+<span class="err">│</span>   <span class="err">└──</span> <span class="n">han</span><span class="p">.</span><span class="n">jpg</span> 
+<span class="err">├──</span> <span class="n">PDF</span><span class="o">-</span><span class="err">файлы</span> 
+<span class="err">│</span>   <span class="err">└──</span> <span class="n">menu</span><span class="p">.</span><span class="n">pdf</span> 
+<span class="err">└──</span> <span class="err">страницы</span> 
+    <span class="err">└──</span> <span class="n">test</span><span class="p">.</span><span class="n">md</span>
+
+
+<span class="n">content</span>
+<span class="err">├──</span> <span class="n">images</span>
+<span class="err">│</span>   <span class="err">└──</span> <span class="n">han</span><span class="p">.</span><span class="n">jpg</span>
+<span class="err">├──</span> <span class="n">pdfs</span>
+<span class="err">│</span>   <span class="err">└──</span> <span class="n">menu</span><span class="p">.</span><span class="n">pdf</span>
+<span class="err">└──</span> <span class="n">pages</span>
+    <span class="err">└──</span> <span class="n">test</span><span class="p">.</span><span class="n">md</span>
+</code></pre></div>
+
+
+<p><code>test.md</code> будет включать:</p>
+<div class="highlight"><pre><span></span><code><span class="err">![Альтернативный текст]({static} /images/han.jpg) </span>
+<span class="err">[Наше меню]({static}/pdfs/menu.pdf)</span>
+</code></pre></div>
+
+
+<p>Поколение сайта будет затем скопировать <code>han.jpg</code> на <code>output/images/han.jpg</code>, <code>menu.pdf</code> чтобы <code>output/pdfs/menu.pdf</code> и написать соответствующие ссылки <code>test.md</code>.</p>
+<p>Если вы используете <code>{static}</code> ссылку на статью или страницу, она будет преобразована в ссылку на ее исходный код.</p>
+<h3>Прикрепление статических файлов<a href="https://docs.getpelican.com/en/stable/content.html#attaching-static-files" title="Постоянная ссылка на этот заголовок">¶</a></h3>
+<p>Начиная с Pelican 3.5, статические файлы могут быть «прикреплены» к странице или статье, используя следующий синтаксис для цели ссылки: <code>{attach}path/to/file</code>. Это работает как <code>{static}</code> синтаксис, но также перемещает статический файл в выходной каталог связывающего документа. Если статический файл происходит из подкаталога ниже источника связывающего документа, эта связь будет сохранена на выходе. В противном случае он станет родственником связывающего документа.</p>
+<p>Это работает только для ссылки на статические файлы.</p>
+<p>Например, каталог содержимого проекта может иметь такую ​​структуру:</p>
+<div class="highlight"><pre><span></span><code><span class="err">содержание</span> 
+<span class="err">├──</span> <span class="err">блог</span> 
+<span class="err">│</span>   <span class="err">├──</span> <span class="err">иконки</span> 
+<span class="err">│</span>   <span class="err">│</span>   <span class="err">└──</span> <span class="n">icon</span><span class="p">.</span><span class="n">png</span> 
+<span class="err">│</span>   <span class="err">├──</span> <span class="n">photo</span><span class="p">.</span><span class="n">jpg</span> 
+<span class="err">│</span>   <span class="err">└──</span> <span class="n">testpost</span><span class="p">.</span><span class="n">md</span> 
+<span class="err">└──</span> <span class="err">загрузки</span> 
+    <span class="err">└──</span> <span class="n">archive</span><span class="p">.</span><span class="n">zip</span>
+
+
+<span class="n">content</span>
+<span class="err">├──</span> <span class="n">blog</span>
+<span class="err">│</span>   <span class="err">├──</span> <span class="n">icons</span>
+<span class="err">│</span>   <span class="err">│</span>   <span class="err">└──</span> <span class="n">icon</span><span class="p">.</span><span class="n">png</span>
+<span class="err">│</span>   <span class="err">├──</span> <span class="n">photo</span><span class="p">.</span><span class="n">jpg</span>
+<span class="err">│</span>   <span class="err">└──</span> <span class="n">testpost</span><span class="p">.</span><span class="n">md</span>
+<span class="err">└──</span> <span class="n">downloads</span>
+    <span class="err">└──</span> <span class="n">archive</span><span class="p">.</span><span class="n">zip</span>
+</code></pre></div>
+
+
+<p><code>pelicanconf.py</code> будет включать:</p>
+<div class="highlight"><pre><span></span><code><span class="err">ДОРОЖКА</span>  <span class="o">=</span>  <span class="s1">&#39;content&#39;</span> 
+<span class="n">ARTICLE_PATHS</span>  <span class="o">=</span>  <span class="p">[</span> <span class="s1">&#39;blog&#39;</span> <span class="p">]</span> 
+<span class="n">ARTICLE_SAVE_AS</span>  <span class="o">=</span>  <span class="s1">&#39;{date:% Y} / {slug} .html&#39;</span> 
+<span class="n">ARTICLE_URL</span>  <span class="o">=</span>  <span class="s1">&#39;{date:% Y} / {slug} .html&#39;</span>
+
+
+<span class="n">PATH</span> <span class="o">=</span> <span class="s1">&#39;content&#39;</span>
+<span class="n">ARTICLE_PATHS</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;blog&#39;</span><span class="p">]</span>
+<span class="n">ARTICLE_SAVE_AS</span> <span class="o">=</span> <span class="s1">&#39;{date:%Y}/{slug}.html&#39;</span>
+<span class="n">ARTICLE_URL</span> <span class="o">=</span> <span class="s1">&#39;{date:%Y}/{slug}.html&#39;</span>
+</code></pre></div>
+
+
+<p><code>testpost.md</code> будет включать:</p>
+<div class="highlight"><pre><span></span><code><span class="nl">Title</span><span class="p">:</span> <span class="n">Test</span> <span class="n">Post</span>
+<span class="nl">Category</span><span class="p">:</span> <span class="n">test</span>
+<span class="nl">Date</span><span class="p">:</span> <span class="mi">2014</span><span class="o">-</span><span class="mi">10</span><span class="o">-</span><span class="mi">31</span>
+
+<span class="o">!</span><span class="p">[</span><span class="n">Icon</span><span class="p">]({</span><span class="n">attach</span><span class="p">}</span><span class="n">icons</span><span class="o">/</span><span class="n">icon</span><span class="p">.</span><span class="n">png</span><span class="p">)</span>
+<span class="o">!</span><span class="p">[</span><span class="n">Photo</span><span class="p">]({</span><span class="n">attach</span><span class="p">}</span><span class="n">photo</span><span class="p">.</span><span class="n">jpg</span><span class="p">)</span>
+<span class="p">[</span><span class="n">Downloadable</span> <span class="n">File</span><span class="p">]({</span><span class="n">attach</span><span class="p">}</span><span class="o">/</span><span class="n">downloads</span><span class="o">/</span><span class="n">archive</span><span class="p">.</span><span class="n">zip</span><span class="p">)</span>
+
+
+<span class="err">Название</span><span class="o">:</span> <span class="err">Тестовая</span> <span class="err">статья</span>
+<span class="nl">Category</span><span class="p">:</span> <span class="err">тест</span> 
+<span class="nl">Date</span><span class="p">:</span> <span class="mi">2014</span><span class="o">-</span><span class="mi">10</span><span class="o">-</span><span class="mi">31</span>
+
+<span class="o">!</span><span class="p">[</span><span class="n">Icon</span><span class="p">]({</span><span class="n">attach</span><span class="p">}</span><span class="n">icons</span><span class="o">/</span><span class="n">icon</span><span class="p">.</span><span class="n">png</span><span class="p">)</span> 
+<span class="o">!</span><span class="p">[</span><span class="err">Фото</span><span class="p">]({</span><span class="n">attach</span><span class="p">}</span><span class="n">photo</span><span class="p">.</span><span class="n">jpg</span><span class="p">)</span>
+<span class="p">[</span><span class="err">Загружаемый</span> <span class="err">файл</span><span class="p">]({</span><span class="n">attach</span><span class="p">}</span><span class="o">/</span><span class="n">downloads</span><span class="o">/</span><span class="n">archive</span><span class="p">.</span><span class="n">zip</span><span class="p">)</span>
+</code></pre></div>
+
+
+<p>При создании сайта будет создан выходной каталог со следующей структурой:</p>
+<div class="highlight"><pre><span></span><code><span class="err">вывод</span> 
+<span class="err">└──</span> <span class="mi">2014</span> 
+    <span class="err">├──</span> <span class="n">archive</span><span class="p">.</span><span class="n">zip</span> 
+    <span class="err">├──</span> <span class="err">иконки</span> 
+    <span class="err">│</span>   <span class="err">└──</span> <span class="n">icon</span><span class="p">.</span><span class="n">png</span> 
+    <span class="err">├──</span> <span class="n">photo</span><span class="p">.</span><span class="n">jpg</span> 
+    <span class="err">└──</span> <span class="n">test</span><span class="o">-</span><span class="n">post</span><span class="p">.</span><span class="n">html</span>
+
+
+<span class="k">output</span>
+<span class="err">└──</span> <span class="mi">2014</span>
+    <span class="err">├──</span> <span class="n">archive</span><span class="p">.</span><span class="n">zip</span>
+    <span class="err">├──</span> <span class="n">icons</span>
+    <span class="err">│</span>   <span class="err">└──</span> <span class="n">icon</span><span class="p">.</span><span class="n">png</span>
+    <span class="err">├──</span> <span class="n">photo</span><span class="p">.</span><span class="n">jpg</span>
+    <span class="err">└──</span> <span class="n">test</span><span class="o">-</span><span class="n">post</span><span class="p">.</span><span class="n">html</span>
+</code></pre></div>
+
+
+<p>Обратите внимание, что все файлы, связанные с помощью, <code>{attach}</code> оказались в каталоге вывода статьи или ниже него.</p>
+<p>Если статический файл связан несколько раз, функция перемещения <code>{attach}</code> будет работать только в первой из этих ссылок, которые будут обрабатываться. После первой ссылки Пеликан отнесется к <code>{attach}</code> лайку <code>{static}</code>. Это позволяет избежать разрыва уже обработанных ссылок.</p>
+<p><strong>Будьте осторожны при связывании с файлом из нескольких документов:</strong> поскольку первая ссылка на файл завершает его местоположение, а Pelican не определяет порядок, в котором обрабатываются документы, использование <code>{attach}</code> файла, связанного несколькими документами, может привести к изменению его местоположения с одного. сайт строить до следующего. (Произойдет ли это на практике, будет зависеть от операционной системы, файловой системы, версии Pelican и документов, добавляемых, изменяемых или удаляемых из проекта.) Любые внешние сайты, ссылающиеся на старое местоположение файла, могут в этом случае найти свои ссылки неработающими. <strong>Поэтому рекомендуется использовать {attach} только в том случае, если вы используете его во всех ссылках на файл, и только если связывающие документы совместно используют один каталог.</strong>В этих условиях выходное расположение файла не изменится в будущих сборках. В случаях, когда эти меры предосторожности невозможны, рассмотрите возможность использования <code>{static}</code> ссылок вместо <code>{attach}</code> и определения местоположения файла в соответствии с настройками проекта <code>STATIC_SAVE_AS</code> и <code>STATIC_URL</code>. (Для каждого файла <code>save_as</code> и <code>url</code> переопределения все еще можно установить <code>EXTRA_PATH_METADATA</code>.)</p>
+<h3>Ссылки на авторов, категории, индекс и теги<a href="https://docs.getpelican.com/en/stable/content.html#linking-to-authors-categories-index-and-tags" title="Постоянная ссылка на этот заголовок">¶</a></h3>
+<p>Вы можете связаться с авторами, категории, индексы и теги , используя <code>{author}name</code>, <code>{category}foobar</code>, <code>{index}</code> и <code>{tag}tagname</code> синтаксис.</p>
+<h3>Устаревший синтаксис внутренней ссылки<a href="https://docs.getpelican.com/en/stable/content.html#deprecated-internal-link-syntax" title="Постоянная ссылка на этот заголовок">¶</a></h3>
+<p>Чтобы оставаться совместимым с более ранними версиями, Pelican по-прежнему поддерживает вертикальные полосы ( <code>||</code> ) в дополнение к фигурным скобкам ( <code>{}</code> ) для внутренних ссылок. Например: <code>|filename|an_article.rst</code>, <code>|tag|tagname</code>, <code>|category|foobar</code>. Синтаксис был изменен с <code>||</code> на, <code>{}</code> чтобы избежать конфликтов с расширениями Markdown или директивами reST. Точно так же Pelican также поддерживает ссылки на статический контент с помощью <code>{filename}</code>. Синтаксис был изменен на, <code>{static}</code> чтобы разрешить ссылки как на сгенерированные статьи и страницы, так и на их статические источники.</p>
+<p>Со временем поддержка старого синтаксиса может быть удалена.</p>
+<h3>Включая другие файлы<a href="https://docs.getpelican.com/en/stable/content.html#including-other-files" title="Постоянная ссылка на этот заголовок">¶</a></h3>
+<p>Синтаксисы Markdown и reStructuredText предоставляют механизмы для этого.</p>
+<p>Ниже приведены несколько примеров для <strong>reStructuredText</strong> с использованием <a href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#include">директивы include</a> :</p>
+<div class="highlight"><pre><span></span><code><span class="p">..</span> <span class="ow">include</span><span class="p">::</span> main.cpp
+</code></pre></div>
+
+
+<p>Включите фрагмент файла, разделенный двумя идентификаторами, выделенный как C ++ (также возможна нарезка по номерам строк):</p>
+<div class="highlight"><pre><span></span><code><span class="p">..</span> <span class="ow">include</span><span class="p">::</span> main.cpp
+    <span class="nc">:code:</span> c++
+    <span class="nc">:start-after:</span> // begin
+    <span class="nc">:end-before:</span> // end
+</code></pre></div>
+
+
+<p>Включите необработанный файл HTML (или встроенный SVG) и поместите его прямо в вывод без какой-либо обработки:</p>
+<div class="highlight"><pre><span></span><code><span class="p">..</span> <span class="ow">raw</span><span class="p">::</span> html
+    <span class="nc">:file:</span> table.html
+</code></pre></div>
+
+
+<p>Для <strong>Markdown</strong> нужно полагаться на расширение. Например, используя <a href="https://github.com/neurobin/mdx_include">плагин mdx_include</a> :</p>
+<div class="highlight"><pre><span></span><code><span class="err">```html</span>
+<span class="err">{! template.html !}</span>
+<span class="err">```</span>
+</code></pre></div>
+
+
+<h2>Импорт существующего сайта<a href="https://docs.getpelican.com/en/stable/content.html#importing-an-existing-site" title="Постоянная ссылка на этот заголовок">¶</a></h2>
+<p>Можно импортировать свой сайт из каналов WordPress, Tumblr, Dotclear и RSS с помощью простого скрипта. См. <a href="https://docs.getpelican.com/en/stable/content.html#importer.html#import">Импорт существующего сайта</a> .</p>
+<h2>Переводы<a href="https://docs.getpelican.com/en/stable/content.html#translations" title="Постоянная ссылка на этот заголовок">¶</a></h2>
+<p>Есть возможность переводить статьи. Для этого вам нужно добавить <code>lang</code> метаатрибут к вашим статьям / страницам и установить <code>DEFAULT_LANG</code> настройку (по умолчанию английский [en]). С этими настройками будут перечислены только статьи с языком по умолчанию, и каждая статья будет сопровождаться списком доступных переводов для этой статьи.</p>
+<blockquote>
+<p>Заметка</p>
+<p>Эта основная функция Pelican не создает дочерние сайты (например
+<code>example.com/de</code>) с переведенными шаблонами для каждого языка. Для
+такой расширенной функциональности можно использовать <a href="https://github.com/getpelican/pelican-plugins/tree/master/i18n_subsites">плагин
+i18n_subsites</a>.
+</p>
+</blockquote>
+<p>По умолчанию Pelican использует «slug» URL статьи, чтобы определить, являются ли две или более статей переводами друг друга. (Это можно изменить <code>ARTICLE_TRANSLATION_ID</code> настройкой.) Заголовок можно установить вручную в метаданных файла; если не установлен явно, Пеликан автоматически сгенерирует заголовок статьи.</p>
+<p>Вот пример двух статей, одна на английском, а другая на французском.</p>
+<p>Статья на английском:</p>
+<div class="highlight"><pre><span></span><code><span class="n">Foobar</span> <span class="k">is</span> <span class="k">not</span> <span class="n">dead</span>
+<span class="o">##################</span>
+
+<span class="p">:</span><span class="n">slug</span><span class="p">:</span> <span class="n">foobar</span><span class="o">-</span><span class="k">is</span><span class="o">-</span><span class="k">not</span><span class="o">-</span><span class="n">dead</span>
+<span class="p">:</span><span class="n">lang</span><span class="p">:</span> <span class="n">en</span>
+
+<span class="n">That</span><span class="err">&#39;</span><span class="n">s</span> <span class="k">true</span><span class="p">,</span> <span class="n">foobar</span> <span class="k">is</span> <span class="n">still</span> <span class="n">alive</span><span class="o">!</span>
+<span class="err">Это</span> <span class="err">правда</span><span class="p">,</span> <span class="n">foobar</span> <span class="err">все</span> <span class="err">еще</span> <span class="err">жив</span><span class="o">!</span>
+</code></pre></div>
+
+
+<p>Русская:</p>
+<div class="highlight"><pre><span></span><code><span class="n">Foobar</span> <span class="err">не</span> <span class="err">мертв</span>
+<span class="o">##################</span>
+
+<span class="p">:</span><span class="n">slug</span><span class="p">:</span> <span class="n">foobar</span><span class="o">-</span><span class="k">is</span><span class="o">-</span><span class="k">not</span><span class="o">-</span><span class="n">dead</span>
+<span class="p">:</span><span class="n">lang</span><span class="p">:</span> <span class="n">ru</span>
+
+<span class="err">Это</span> <span class="err">правда</span><span class="p">,</span> <span class="n">foobar</span> <span class="err">все</span> <span class="err">еще</span> <span class="err">жив</span><span class="o">!</span>
+</code></pre></div>
+
+
+<p>И французская версия:</p>
+<div class="highlight"><pre><span></span><code><span class="n">Foobar</span> <span class="n">n</span><span class="err">&#39;</span><span class="n">est</span> <span class="n">pas</span> <span class="n">mort</span> <span class="o">!</span>
+<span class="o">#######################</span>
+
+<span class="p">:</span><span class="n">slug</span><span class="p">:</span> <span class="n">foobar</span><span class="o">-</span><span class="k">is</span><span class="o">-</span><span class="k">not</span><span class="o">-</span><span class="n">dead</span>
+<span class="p">:</span><span class="n">lang</span><span class="p">:</span> <span class="n">fr</span>
+
+<span class="n">Oui</span> <span class="n">oui</span><span class="p">,</span> <span class="n">foobar</span> <span class="n">est</span> <span class="n">toujours</span> <span class="n">vivant</span> <span class="o">!</span>
+</code></pre></div>
+
+
+<p>Несмотря на качество контента публикации, вы можете видеть, что единственным общим элементом этих двух статей является слаг, который здесь выступает в качестве идентификатора. Если вы не хотите явно определять заголовок таким образом, вы должны вместо этого убедиться, что переведенные заголовки статей идентичны, поскольку заголовок будет автоматически сгенерирован из заголовка статьи.</p>
+<p>Если вы не хотите, чтобы исходная версия одной конкретной статьи определялась <code>DEFAULT_LANG</code> настройкой, используйте <code>translation</code> метаданные, чтобы указать, какие сообщения являются переводами:</p>
+<div class="highlight"><pre><span></span><code><span class="n">Foobar</span> <span class="k">is</span> <span class="k">not</span> <span class="n">dead</span>
+<span class="o">##################</span>
+
+<span class="p">:</span><span class="n">slug</span><span class="p">:</span> <span class="n">foobar</span><span class="o">-</span><span class="k">is</span><span class="o">-</span><span class="k">not</span><span class="o">-</span><span class="n">dead</span>
+<span class="p">:</span><span class="n">lang</span><span class="p">:</span> <span class="n">en</span>
+<span class="p">:</span><span class="k">translation</span><span class="p">:</span> <span class="k">true</span>
+
+<span class="n">That</span><span class="err">&#39;</span><span class="n">s</span> <span class="k">true</span><span class="p">,</span> <span class="n">foobar</span> <span class="k">is</span> <span class="n">still</span> <span class="n">alive</span><span class="o">!</span>
+</code></pre></div>
+
+
+<h2>Подсветка синтаксиса<a href="https://docs.getpelican.com/en/stable/content.html#syntax-highlighting" title="Постоянная ссылка на этот заголовок">¶</a></h2>
+<p>Pelican может предоставить цветную подсветку синтаксиса для ваших блоков кода. Для этого вы должны использовать следующие соглашения в файлах содержимого.</p>
+<p>Для reStructuredText используйте <code>code-block</code> директиву, чтобы указать тип выделяемого кода (в этих примерах мы будем использовать <code>python</code>):</p>
+<div class="highlight"><pre><span></span><code><span class="p">..</span> <span class="ow">code-block</span><span class="p">::</span> <span class="k">python</span>
+
+   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Pelican is a static site generator.&quot;</span><span class="p">)</span>
+   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;«Пеликан - генератор статических сайтов.»&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+
+<p>Для Markdown, который использует <a href="https://python-markdown.github.io/extensions/code_hilite/#syntax">расширение CodeHilite</a> для выделения синтаксиса, <a href="https://python-markdown.github.io/extensions/code_hilite/#syntax">включите</a> идентификатор языка чуть выше блока кода, сделав отступ как для идентификатора, так и для кода:</p>
+<p>Там являются два способа, чтобы указать на идентификатор :</p>
+<div class="highlight"><pre><span></span><code><span class="err">    ::: python </span>
+<span class="err">    print ( &quot;Синтаксис с тройным двоеточием *не* отображает номера строк.&quot; )</span>
+</code></pre></div>
+
+
+<p>Для  отображения строки цифр , использовать в пути - меньше хижину вместо из двоеточия :</p>
+<div class="highlight"><pre><span></span><code><span class="err">    #! python </span>
+<span class="err">    print ( &quot;Синтаксис shebang без указания путей *будет* отображать номера строк.&quot; )</span>
+</code></pre></div>
+
+
+<p>There are two ways to specify the identifier:</p>
+<div class="highlight"><pre><span></span><code><span class="err">    :::python</span>
+<span class="err">    print(&quot;The triple-colon syntax will *not* show line numbers.&quot;)</span>
+</code></pre></div>
+
+
+<p>To display line numbers, use a path-less shebang instead of colons:</p>
+<div class="highlight"><pre><span></span><code><span class="err">    #!python</span>
+<span class="err">    print(&quot;The path-less shebang syntax *will* show line numbers.&quot;)</span>
+</code></pre></div>
+
+
+<p>Указанный идентификатор (например <code>python</code>, <code>ruby</code>) должен быть тем, который появляется в <a href="http://pygments.org/docs/lexers/">списке доступных лексеров</a>.</p>
+<p>При использовании reStructuredText в директиве code-block доступны следующие параметры:</p>
+<div class="wy-table-responsive"><table border="1" class="docutils">
+<colgroup>
+<col width="20%">
+<col width="18%">
+<col width="62%">
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Option</th>
+<th class="head">Valid values</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>anchorlinenos</td>
+<td>N/A</td>
+<td>If present wrap line numbers in &lt;a&gt; tags.</td>
+</tr>
+<tr class="row-odd"><td>classprefix</td>
+<td>string</td>
+<td>String to prepend to token class names</td>
+</tr>
+<tr class="row-even"><td>hl_lines</td>
+<td>numbers</td>
+<td>List of lines to be highlighted, where
+line numbers to highlight are separated
+by a space. This is similar to
+<code class="docutils literal"><span class="pre">emphasize-lines</span></code> in Sphinx, but it
+does not support a range of line numbers
+separated by a hyphen, or comma-separated
+line numbers.</td>
+</tr>
+<tr class="row-odd"><td>lineanchors</td>
+<td>string</td>
+<td>Wrap each line in an anchor using this
+string and -linenumber.</td>
+</tr>
+<tr class="row-even"><td>linenos</td>
+<td>string</td>
+<td>If present or set to “table” output line
+numbers in a table, if set to
+“inline” output them inline. “none” means
+do not output the line numbers for this
+table.</td>
+</tr>
+<tr class="row-odd"><td>linenospecial</td>
+<td>number</td>
+<td>If set every nth line will be given the
+‘special’ css class.</td>
+</tr>
+<tr class="row-even"><td>linenostart</td>
+<td>number</td>
+<td>Line number for the first line.</td>
+</tr>
+<tr class="row-odd"><td>linenostep</td>
+<td>number</td>
+<td>Print every nth line number.</td>
+</tr>
+<tr class="row-even"><td>lineseparator</td>
+<td>string</td>
+<td>String to print between lines of code,
+‘n’ by default.</td>
+</tr>
+<tr class="row-odd"><td>linespans</td>
+<td>string</td>
+<td>Wrap each line in a span using this and
+-linenumber.</td>
+</tr>
+<tr class="row-even"><td>nobackground</td>
+<td>N/A</td>
+<td>If set do not output background color for
+the wrapping element</td>
+</tr>
+<tr class="row-odd"><td>nowrap</td>
+<td>N/A</td>
+<td>If set do not wrap the tokens at all.</td>
+</tr>
+<tr class="row-even"><td>tagsfile</td>
+<td>string</td>
+<td>ctags file to use for name definitions.</td>
+</tr>
+<tr class="row-odd"><td>tagurlformat</td>
+<td>string</td>
+<td>format for the ctag links.</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>способ записи таблицы в Markdown</p>
+<div class="highlight"><pre><span></span><code><span class="err">| вариант/параметр/опция    | Допустимые значения   | Описание  |</span>
+<span class="err">| - | - | - |</span>
+</code></pre></div>
+
+
+<p>Как в примере выше, шаблонизатор вывел таблицу:</p>
+<table>
+<thead>
+<tr>
+<th>вариант/параметр/опция</th>
+<th>Допустимые значения</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>anchorlinenos</code></td>
+<td>N / A</td>
+<td>Если присутствует, переносить номера строк в теги <code>&lt;a&gt;</code>.</td>
+</tr>
+<tr>
+<td><code>classprefix</code></td>
+<td>строка</td>
+<td>Строка для добавления к именам классов токенов</td>
+</tr>
+<tr>
+<td><code>hl_lines</code></td>
+<td>чисел</td>
+<td>Список выделяемых строк, где номера строк, которые необходимо выделить, разделены пробелом. Это похоже на <code>emphasize-lines</code> в Sphinx'-e, но не поддерживает диапазон номеров строк, разделенных дефисом, или номеров строк, разделенных запятыми.</td>
+</tr>
+<tr>
+<td><code>lineanchors</code></td>
+<td>строка</td>
+<td>Оберните каждую строку якорем, используя эту строку и -linenumber.</td>
+</tr>
+<tr>
+<td><code>linenos</code></td>
+<td>строка</td>
+<td>Если он присутствует или установлен как «таблица», выводит номера строк в таблице, если установлен как «встроенный», выводит их как строчные. «None» означает, что номера строк для этой таблицы не выводятся.</td>
+</tr>
+<tr>
+<td><code>linenospecial</code></td>
+<td>число</td>
+<td>Если установлено, каждой n-й строке будет присвоен «специальный» класс css.</td>
+</tr>
+<tr>
+<td><code>linenostart</code></td>
+<td>число</td>
+<td>Номер строки для первой строки.</td>
+</tr>
+<tr>
+<td><code>linenostep</code></td>
+<td>число</td>
+<td>Выведите номер каждой n-й строки.</td>
+</tr>
+<tr>
+<td><code>lineseparator</code></td>
+<td>строка</td>
+<td>Строка для печати между строками кода, по умолчанию «n».</td>
+</tr>
+<tr>
+<td><code>linespans</code></td>
+<td>строка</td>
+<td>Оберните каждую строку отрезком, используя это и -linenumber.</td>
+</tr>
+<tr>
+<td><code>nobackground</code></td>
+<td>N / A</td>
+<td>Если установлено, не выводить цвет фона для элемента упаковки</td>
+</tr>
+<tr>
+<td><code>Nowrap</code></td>
+<td>N / A</td>
+<td>Если установлено, не обертывать токены.</td>
+</tr>
+<tr>
+<td><code>tagsfile</code></td>
+<td>строка</td>
+<td>ctags, который будет использоваться для определений имен.</td>
+</tr>
+<tr>
+<td><code>tagurlformat</code></td>
+<td>строка</td>
+<td>формат для ссылок ctag.</td>
+</tr>
+</tbody>
+</table>
+<h2>Adsmek</h2>
+<p>Обратите внимание, что в зависимости от версии в вашем модуле Pygments могут быть недоступны все эти параметры. Обратитесь к <em>HtmlFormatter</em> части <a href="http://pygments.org/docs/formatters/">документации Pygments</a> для получения более подробной информации по каждому из вариантов.</p>
+<p>Например, следующий блок кода включает номера строк, начиная с 153, и добавляет к классам CSS Pygments префиксы <em>pgcss,</em> чтобы сделать имена более уникальными и избежать возможных конфликтов CSS:</p>
+<div class="highlight"><pre><span></span><code><span class="p">..</span> <span class="ow">code-block</span><span class="p">::</span> identifier
+    <span class="nc">:classprefix:</span> pgcss
+    <span class="nc">:linenos:</span> table
+    <span class="nc">:linenostart:</span> 153
+
+   &lt;indented code block goes here&gt;
+
+
+<span class="cp">..  код - блок ::  идентификатор </span>
+<span class="cp">    : префикс класса :  pgcss </span>
+<span class="cp">    : бельеos :  таблица </span>
+<span class="cp">    : белье начало :  153</span>
+
+<span class="cp">   &lt; здесь идет блок кода с отступом  &gt;</span>
+</code></pre></div>
+
+
+<p>Также можно указать <code>PYGMENTS_RST_OPTIONS</code> переменную в файле настроек Pelican, чтобы включить параметры, которые будут автоматически применяться к каждому блоку кода.</p>
+<p>Например, если вы хотите, чтобы номера строк отображались для каждого блока кода и префикса CSS, вы должны установить для этой переменной значение:</p>
+<div class="highlight"><pre><span></span><code><span class="err">PYGMENTS_RST_OPTIONS = {&#39;classprefix&#39;: &#39;pgcss&#39;, &#39;linenos&#39;: &#39;table&#39;}</span>
+<span class="err">PYGMENTS_RST_OPTIONS  =  {&#39;префикс класса&#39;:  &#39;pgcss&#39;, &#39;белье&#39;: &#39;таблица&#39;}</span>
+</code></pre></div>
+
+
+<p>Если указано, настройки для отдельных блоков кода переопределят значения по умолчанию в вашем файле настроек.</p>
+<h2>Публикация черновиков<a href="https://docs.getpelican.com/en/stable/content.html#publishing-drafts" title="Постоянная ссылка на этот заголовок">¶</a></h2>
+<p>Если вы хотите опубликовать статью или страницу в виде черновика (например, для просмотра друзьями перед публикацией), вы можете добавить атрибут к ее метаданным. Затем эта статья будет выведена в папку и не будет указана ни на странице индекса, ни на странице категорий или тегов.<code>Status:  draft</code> <code>drafts</code></p>
+<p>Если ваши статьи должны автоматически публиковаться как черновики (чтобы случайно не опубликовать статью до ее завершения), укажите статус в <code>DEFAULT_METADATA</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="n">DEFAULT_METADATA</span> <span class="o">=</span> <span class="err">{</span>
+    <span class="s1">&#39;status&#39;</span><span class="p">:</span> <span class="s1">&#39;draft&#39;</span><span class="p">,</span>
+<span class="err">}</span>
+
+
+<span class="n">DEFAULT_METADATA</span>  <span class="o">=</span>  <span class="err">{</span> 
+    <span class="s1">&#39;статус&#39;</span><span class="p">:</span> <span class="s1">&#39;черновик&#39;</span><span class="p">,</span> 
+<span class="err">}</span>
+</code></pre></div>
+
+
+<p>Чтобы опубликовать сообщение со статусом по умолчанию <code>draft</code>, обновите метаданные сообщения, включив их .<code>Status:  published</code></p>
+        </div><!-- /.entry-content -->
+      </div>
+    </div>
+  </div>
+</section>
+  <!-- extras -->
+  <section class="content-section bg-light" id="extras">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <div class="blogroll">
+                  <h2>links</h2>
+                  <ul>
+                      <li><a href="https://adsmek.github.io">Adsmek</a></li>
+                      <li><a href="https://github.com/Adsmek/Adsmek.github.io">перейти в репозиторий</a></li>
+                      <li><a href="https://stackedit.io/app#">Markdown онлайн</a></li>
+                  </ul>
+          </div><!-- /.blogroll -->
+<!-- /#extras -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <div class="container">
+      <ul class="list-inline mb-5">
+            <li class="list-inline-item"><a class="social-link rounded-circle text-white mr-3" href="#" href=""><i class="icon-social-github"></i></a></li>
+      </ul>
+      <p class="text-muted small mb-0">Copyright &copy; Adsmek 2020</p>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="./theme/vendor/jquery/jquery.min.js"></script>
+  <script src="./theme/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="./theme/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="./theme/js/stylish-portfolio.min.js"></script>
+
+
+</body>
+
+</html>

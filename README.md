@@ -8,12 +8,14 @@
 
  + [Go to Adsmek site readme](https://adsmek.github.io/unedtsarnd.html)
  + [Go to Adsmek.github.io](https://github.com/Adsmek/Adsmek.github.io)
+ + [github.com login][https://github.com/login]
 
 ### Периодичные действия в CMD
 
  - В локальной папке активировать окружение Python `venv\Scripts\activate`
  - Изменить данные в страницах-файлах `*.md` папки Adsmek\`content
  - Папка со стилями `cd venv\Lib\site-packages\pelican\themes\notmyidea\static\css`
+ - Папка с темами `cd venv\Lib\site-packages\pelican\themes\`
  - Обновить контент `pelican content -o Adsmek.github.io -s pelicanconf.py`
 
 
@@ -27,11 +29,15 @@
 	pelican content -o Adsmek.github.io -s pelicanconf.py
 	pelican content -o Adsmek.github.io -s pelicanconf.py --ignore-cache
 
+	pelican-themes --install venv\Lib\site-packages\pelican\themes\adsmek  --verbose
+
 
 ## Онлайн редакторы
 
  + [https://stackedit.io/app#](https://stackedit.io/app#) Редактор Markdown
  + [https://html-cleaner.com/](https://html-cleaner.com/) HTML-cleaner
+ + [http://livesphinx.herokuapp.com/](http://livesphinx.herokuapp.com/) Редактор Rst
+
 ___
 
 ## [GitHub Pages](https://pages.github.com/)

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Adsmek - Крейг Себеник</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="../theme/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="../theme/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="../theme/vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="../theme/css/stylish-portfolio.min.css" rel="stylesheet">
+</head>
+<!-- <body id="page-top">-->
+<body id="page-top" class="home">
+
+  <!-- Navigation -->
+  <a class="menu-toggle rounded" href="#">
+    <i class="fas fa-bars"></i>
+  </a>
+  <nav id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+              <li class="sidebar-brand">
+                <a class="js-scroll-trigger" href="#page-top">Adsmek</a>
+              </li>
+              <li  class="sidebar-nav-item"><a class="js-scroll-trigger"  href="../pages/kozarada.html">Kozarada</a></li>
+              <li  class="sidebar-nav-item"><a class="js-scroll-trigger"  href="../category/adsmek.html">Adsmek</a></li>
+              <li  class="sidebar-nav-item"><a class="js-scroll-trigger"  href="../category/english.html">english</a></li>
+              <li  class="sidebar-nav-item"><a class="js-scroll-trigger"  href="../category/posts.html">posts</a></li>
+              <li  class="sidebar-nav-item"><a class="js-scroll-trigger"  href="../category/translations.html">translations</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header class="masthead d-flex">
+    <div class="container text-center my-auto">
+      <h1><a href="../">Adsmek </a></h1>
+      <h3 class="mb-5">
+      </h3>
+      <!-- <a class="btn btn-primary btn-xl js-scroll-trigger" href="#extras">Find Out More</a> -->
+    </div>
+    <div class="overlay"></div>
+  </header>
+  
+
+            <section class="content-section body bg-light" id="featured">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-10 mx-auto">
+                    <article>
+                        <h1 class="entry-title"><a href="../nachalo-raboty-s-pelican-generator-staticheskikh-saitov-na-python.html">Начало работы с Pelican: генератор статических сайтов на Python</a></h1>
+
+<footer class="post-info">
+        <abbr class="published" title="2020-08-06T00:00:00+02:00">
+                Published: Чт 06 Август 2020
+        </abbr>
+		<br />
+        <abbr class="modified" title="2020-08-06T00:00:00+02:00">
+                Updated: Чт 06 Август 2020
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="../author/kreig-sebenik.html">Крейг Себеник</a>
+        </address>
+<p>In <a href="../category/translations.html">translations</a>.</p>
+<p>tags: <a href="../tag/perevod.html">перевод</a> </p>
+</footer><!-- /.post-info --><h1><a href="https://opensource.com/article/19/1/getting-started-pelican">Начало работы с Pelican: генератор статических сайтов на Python (en 2019-01-07)</a></h1>
+<p>'перевод'</p>
+<p>Если вы хотите создать собственный веб-сайт или блог, у вас есть много вариантов. Многие провайдеры разместят ваш веб-сайт и сделают за вас большую часть работы. (WordPress - чрезвычайно популярный вариант.) Но вы теряете некоторую гибкость, используя размещенное решение. Как разработчик программного обеспечения, я предпочитаю управлять своим собственным сервером и сохранять больше свободы в работе моего веб-сайта.</p>
+<p>Однако управление веб-сервером - это довольно трудоемкий процесс. Установить его и получить простое приложение для обслуживания контента достаточно просто. Но отслеживание исправлений и обновлений системы безопасности занимает очень много времени. Если вы просто хотите обслуживать статические веб-страницы, наличие веб-сервера и множества приложений может потребовать больше усилий, чем оно того стоит. Создание HTML-страниц вручную - тоже не лучший вариант.</p>
+<p>Здесь может пригодиться генератор статических сайтов. Эти приложения используют шаблоны для создания всех нужных статических страниц и перекрестных ссылок на них со связанными метаданными. (например, отображение всех страниц с общим тегом или ключевым словом). Генераторы статических сайтов помогают создать сайт с общим внешним видом, используя такие элементы, как области навигации, верхний и нижний колонтитулы.</p>
+<p>Я использую  <a href="https://opensource.com/resources/python">Python</a>  уже много лет. Итак, когда я впервые начал искать что-то для создания статических HTML-страниц, мне захотелось что-то написанное на Python. Основная причина в том, что я часто хочу заглянуть внутрь того, как работает приложение, и использование языка, который я уже знаю, облегчает это. (Если для вас это не важно или вы не используете Python, есть еще несколько отличных  <a href="https://opensource.com/sitewide-search?search_api_views_fulltext=static%20site%20generator">генераторов статических сайтов,</a>  которые используют Ruby, JavaScript и другие языки.)</p>
+<p>Я решил попробовать  <a href="http://docs.getpelican.com/en/stable/">Пеликан</a>  . Это часто используемый генератор статических сайтов, написанный на Python. Он напрямую поддерживает  <a href="http://docutils.sourceforge.net/rst.html">reStructuredText</a>  и может поддерживать  <a href="https://daringfireball.net/projects/markdown/">Markdown</a>  при установке необходимого пакета. Все задачи выполняются с помощью инструментов интерфейса командной строки (CLI), что упрощает задачу для всех, кто знаком с командной строкой. А его простой инструмент CLI для быстрого старта делает создание веб-сайта чрезвычайно простым.</p>
+<p>В этой статье я объясню, как установить Pelican 4, добавить статью и изменить тему по умолчанию. (Примечание: все это было разработано для MacOS; оно должно работать одинаково с любым вариантом Unix / Linux, но у меня нет хоста Windows для тестирования.)</p>
+<h2>Установка и настройка</h2>
+<p>Первый шаг - создать  <a href="https://virtualenv.pypa.io/en/latest/">виртуальный сервер</a>  и установить Pelican.</p>
+<div class="highlight"><pre><span></span><code>$ mkdir test-site  
+$ <span class="nb">cd</span> test-site  
+$ python3 -m venv venv  
+$ ./venv/bin/pip install --upgrade pip  
+...  
+Успешно установлен pip-18.1  
+$ ./venv/bin/pip install pelican  
+Сборка пеликанов  
+. ..  
+Успешно установлен MarkupSafe-1.1.0 blinker-1.4 Docutils-0.14 feedgenerator-1.9 jinja2-2.10 pelican-4.0.1 pygments-2.3.1 python-dateutil-2.7.5 pytz-2018.7 six-1.12.0 unidecode-1.0. <span class="m">23</span>
+</code></pre></div>
+
+
+<p>Для простоты я ввел значения для заголовка и автора и ответил N на префикс URL и разбивку на страницы. (Для остальных вопросов я использовал значение по умолчанию.)</p>
+<p>Инструмент CLI для быстрого старта Pelican создаст базовый макет и несколько файлов, чтобы вы начали. Запустите команду  <strong>pelican-quickstart</strong>  . Для простоты я ввел значения для  <strong>заголовка</strong>  и  <strong>автора</strong>  и ответил  <strong>N</strong>  на префикс URL и разбивку на страницы. Позже эти настройки очень легко изменить в файле конфигурации.</p>
+<div class="highlight"><pre><span></span><code>$ ./venv/bin/pelican-quickstart  
+Добро пожаловать в pelican-quickstart v4.0.1.
+</code></pre></div>
+
+
+<p>Этот скрипт поможет вам создать новый веб-сайт на основе Пеликана.  </p>
+<p>Пожалуйста, ответьте на следующие вопросы, чтобы этот сценарий мог сгенерировать файлы, необходимые Pelican.  </p>
+<blockquote>
+<p>Где вы хотите создать свой новый веб-сайт? [.]<br>
+Как будет называться этот веб-сайт? Мой тестовый блог<br>
+Кто будет автором этого веб-сайта? Крейг<br>
+Какой язык будет по умолчанию на этом веб-сайте? [en]<br>
+Вы хотите указать префикс URL? например, https://example.com (Y / n) n<br>
+Вы хотите включить разбивку на страницы? (Y / n) n<br>
+Какой у вас часовой пояс? [Europe / Paris]<br>
+Хотите создать файл tasks.py/Makefile для автоматизации создания и публикации? (Y / N)<br>
+Вы хотите загрузить свой сайт через FTP? (да / нет)<br>
+Вы хотите загрузить свой сайт с помощью SSH? (да / Нет)<br>
+Вы хотите загрузить свой веб-сайт с помощью Dropbox? (да / нет)<br>
+Вы хотите загрузить свой веб-сайт с помощью S3? (да / Нет)<br>
+Вы хотите загрузить свой веб-сайт с помощью Rackspace Cloud Files? (Да / Нет)<br>
+Вы хотите загрузить свой сайт с помощью GitHub Pages? (да / нет)<br>
+Готово. Ваш новый проект доступен по адресу / Users / craig / tmp / pelican / test-site</p>
+</blockquote>
+<p>Все файлы, необходимые для начала работы, готовы к работе.</p>
+<p>По умолчанию в быстром запуске используется часовой пояс Европа / Париж, поэтому измените его, прежде чем продолжить. Откройте файл  <strong>pelicanconf.py</strong>  в своем любимом текстовом редакторе. Найдите переменную  <strong>TIMEZONE</strong>  .</p>
+<div class="highlight"><pre><span></span><code><span class="err">TIMEZONE = &#39;Europe/Paris&#39;</span>
+</code></pre></div>
+
+
+<p>Измените его на  <strong>UTC</strong>  .</p>
+<div class="highlight"><pre><span></span><code><span class="err">TIMEZONE = &#39;UTC&#39;</span>
+</code></pre></div>
+
+
+<p>Чтобы обновить социальные настройки, найдите переменную  <strong>SOCIAL</strong>  в  <strong>файле pelicanconf.py</strong>  .</p>
+<p>SOCIAL = ( ( 'Вы можете добавить ссылки в свой файл конфигурации' , '#' ) ,<br>
+( 'Другая социальная ссылка' , '#' ) , )</p>
+<p>Я добавлю ссылку на свою учетную запись Twitter.</p>
+<div class="highlight"><pre><span></span><code><span class="err">SOCIAL = ((&#39;Twitter (#craigs55)&#39;, &#39;https://twitter.com/craigs55&#39;),)</span>
+</code></pre></div>
+
+
+<p>Обратите внимание на конечную запятую - это важно. Эта запятая помогает Python распознать, что переменная на самом деле является набором. Убедитесь, что вы не удалили эту запятую.</p>
+<p>Теперь у вас есть основы работы с сайтом. В ходе быстрого старта был создан Makefile с несколькими целями. Предоставление цели  <strong>devserver</strong>  для  <strong>make</strong>  запустит сервер разработки на вашем компьютере, чтобы вы могли все предварительно просмотреть. Команды CLI , используемые в Makefile считаются частью вашего окружения  <strong>PATH</strong>  , так что вам нужно  <strong>активировать</strong>  в  <strong>virtualenv</strong>  первым.</p>
+<div class="highlight"><pre><span></span><code>$ <span class="nb">source</span> ./venv/bin/activate  
+$ make devserver pelican -lr  
+/ Users / craig / tmp / pelican / test- site / content o  
+/ Users / craig / tmp / pelican / test- site / output -s / Users / craig / tmp / пеликан / тестовый сайт / pelicanconf. py
+
+
+
+Изменено: тема , настройки. не регенерирующее ...  
+ВНИМАНИЕ : Не действительных файлов , найденных в содержании для активных читателей:  
+<span class="p">|</span> BaseReader <span class="o">(</span> статический <span class="o">)</span>  
+<span class="p">|</span> HTMLReader <span class="o">(</span> htm , html <span class="o">)</span>  
+<span class="p">|</span> RstReader <span class="o">(</span>rst <span class="o">)</span>  
+Готово: обработано <span class="m">0</span> статей , <span class="m">0</span> черновиков , <span class="m">0</span> страниц , <span class="m">0</span> скрытых страниц и <span class="m">0</span> черновиков за <span class="m">0</span>,18 секунды.
+</code></pre></div>
+
+
+<p>Укажите в своем любимом браузере  <a href="http://localhost:8000/">http: // localhost: 8000,</a>  чтобы просмотреть простой тестовый блог.</p>
+<h2><a href="https://html-cleaner.com/file/417761">pelican_test-site1.png</a></h2>
+<p><img alt="Пеликан испытательный полигон 1" src="https://opensource.com/sites/default/files/uploads/pelican_test-site1.png" title="Пеликан испытательный полигон 1"></p>
+<p>Вы можете увидеть ссылку Twitter справа и несколько ссылок на Pelican, Python и Jinja слева от нее. (Jinja - отличный язык шаблонов, который может использовать Pelican. Подробнее о нем можно узнать в  <a href="http://jinja.pocoo.org/docs/2.10/">документации Jinja</a>  .)</p>
+<h2>Добавление контента</h2>
+<p>Теперь, когда у вас есть базовый сайт, добавьте немного контента. Сначала добавьте файл с именем  <strong>welcome.rst</strong>  в каталог  <strong>содержимого</strong>  сайта . В вашем любимом текстовом редакторе создайте файл со следующим текстом:</p>
+<div class="highlight"><pre><span></span><code>$ <span class="nb">pwd</span>  
+/ Users / craig / tmp / pelican / test-site  
+$ cat content / welcome.rst
+
+
+
+Добро пожаловать в мой блог!  
+<span class="c1">###################</span>
+
+: дата: <span class="m">20181216</span> <span class="m">08</span>:30  
+: теги: добро пожаловать  
+: категория: Введение  
+: slug: добро пожаловать  
+: автор: Крейг  
+: резюме: приветственный документ
+
+Добро пожаловать в мой блог.  
+Это короткая страница, чтобы показать, как создать статическую страницу.
+</code></pre></div>
+
+
+<p>Строки метаданных - дата, теги и т. Д. - автоматически анализируются Pelican.</p>
+<p>После того, как вы напишете файл,  <strong>сервер разработчика</strong>  должен вывести что-то вроде этого:</p>
+<p>-&gt; Изменено: содержание. регенерация ...<br>
+Готово: обработано 1 статья, 0 черновиков, 0 страниц, 0 скрытых страниц и 0 черновиков за 0,10 секунды.</p>
+<p>Перезагрузите тестовый сайт в браузере, чтобы увидеть изменения.</p>
+<h2><a href="https://html-cleaner.com/file/417766">pelican_test-site2.png</a></h2>
+<p><img alt="Пеликан полигон 2" src="https://opensource.com/sites/default/files/uploads/pelican_test-site2.png" title="Пеликан полигон 2"></p>
+<p>Метаданные (например, дата и теги) были автоматически добавлены на страницу. Кроме того, Пеликан автоматически определил категорию  <strong>вступления</strong>  и добавил раздел в верхнюю навигацию.</p>
+<h2>Изменить тему</h2>
+<p>Одна из самых приятных сторон работы с популярным программным обеспечением с открытым исходным кодом, таким как Pelican, заключается в том, что многие пользователи вносят изменения и вносят их обратно в проект. Многие материалы представлены в форме тем.</p>
+<p>Тема сайта устанавливает цвета, параметры макета и т. Д. Новые темы действительно легко опробовать. Вы можете предварительно просмотреть многие из них на  <a href="http://www.pelicanthemes.com/">Pelican Themes</a>  .</p>
+<p>Сначала клонируйте репозиторий GitHub:</p>
+<div class="highlight"><pre><span></span><code>$ <span class="nb">cd</span> ..  
+$ git clone --recursive https://github.com/getpelican/pelicanthemes
+</code></pre></div>
+
+
+<p>Клонирование в «пеликантемы» ...</p>
+<p>Так как мне нравится синий цвет, попробую  <a href="https://github.com/nasskach/pelican-blueidea/tree/58fb13112a2707baa7d65075517c40439ab95c0a">blueidea</a>  .</p>
+<p>Отредактируйте  <strong>файл pelicanconf.py</strong>  и добавьте следующую строку:</p>
+<div class="highlight"><pre><span></span><code><span class="err">THEME = &#39;/Users/craig/tmp/pelican/pelican-themes/blueidea/&#39;</span>
+</code></pre></div>
+
+
+<p><strong>Devserver</strong>  восстановит свой выход. Перезагрузите веб-страницу в браузере, чтобы увидеть новую тему.</p>
+<p><a href="https://html-cleaner.com/file/417771">pelican_test-site3.png</a></p>
+<p><img alt="Пеликан испытательный полигон 3" src="https://opensource.com/sites/default/files/uploads/pelican_test-site3.png" title="Пеликан испытательный полигон 3"></p>
+<p>Тема контролирует многие аспекты макета. Например, в теме по умолчанию вы можете увидеть категорию (Intro) с метатегами рядом со статьей. Но эта категория не отображается в теме blueidea.</p>
+<h2>Прочие соображения</h2>
+<p>Это было довольно быстрое знакомство с Пеликаном. Есть пара важных тем, которые я не затронул.</p>
+<p>Во-первых, одна из причин, по которой я не решался перейти на статический сайт, заключалась в том, что он не позволял обсуждать статьи. К счастью, есть сторонние поставщики, которые проведут для вас обсуждения. Я сейчас смотрю на  <a href="https://disqus.com/">Disqus</a>  .</p>
+<p>Затем все вышеперечисленное было сделано на моей локальной машине. Если я хочу, чтобы другие видели мой сайт, мне придется куда-нибудь загрузить предварительно сгенерированные файлы HTML. Если вы посмотрите на вывод  <strong>pelican-quickstart</strong>  , вы увидите варианты использования FTP, SSH, S3 и даже GitHub Pages. У каждого варианта есть свои плюсы и минусы. Но, если бы мне пришлось выбрать один, я бы, вероятно, опубликовал его на страницах GitHub.</p>
+<p>У Пеликана есть много других функций - я все еще узнаю о нем больше каждый день. Если вы хотите самостоятельно разместить веб-сайт или блог с простым статическим контентом и хотите использовать Python, Pelican - отличный выбор. У него есть активное сообщество пользователей, которое исправляет ошибки, добавляет функции и создает новые интересные темы. Попробуйте!</p>                    </article>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- /#featured -->
+  <!-- extras -->
+  <section class="content-section bg-light" id="extras">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <div class="blogroll">
+                  <h2>links</h2>
+                  <ul>
+                      <li><a href="https://adsmek.github.io">Adsmek</a></li>
+                      <li><a href="https://github.com/Adsmek/Adsmek.github.io">перейти в репозиторий</a></li>
+                      <li><a href="https://stackedit.io/app#">Markdown онлайн</a></li>
+                  </ul>
+          </div><!-- /.blogroll -->
+<!-- /#extras -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <div class="container">
+      <ul class="list-inline mb-5">
+            <li class="list-inline-item"><a class="social-link rounded-circle text-white mr-3" href="#" href=""><i class="icon-social-github"></i></a></li>
+      </ul>
+      <p class="text-muted small mb-0">Copyright &copy; Adsmek 2020</p>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="../theme/vendor/jquery/jquery.min.js"></script>
+  <script src="../theme/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="../theme/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="../theme/js/stylish-portfolio.min.js"></script>
+
+
+</body>
+
+</html>

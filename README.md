@@ -37,6 +37,7 @@
  + [https://stackedit.io/app#](https://stackedit.io/app#) Редактор Markdown
  + [https://html-cleaner.com/](https://html-cleaner.com/) HTML-cleaner
  + [http://livesphinx.herokuapp.com/](http://livesphinx.herokuapp.com/) Редактор Rst
+ + [vector](https://vectr.com/tmp/b1iSycHeF8/glQqtJGp6)  Svg Editor online
 
 ___
 
@@ -47,7 +48,7 @@ ___
 	git clone https://github.com/username/username.github.io
 
 
-Push (нажать / толкнуть / отправить) в репозиторий
+## Push 
 
 	git add --all
 
